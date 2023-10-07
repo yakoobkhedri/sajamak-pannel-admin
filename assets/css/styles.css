@@ -111,11 +111,15 @@ a {
 .h-64 {
     height: 64px;
 }
-
+.h-101 {
+    height: 101px;
+}
 .w-64 {
     width: 64px;
 }
-
+.w-120 {
+    width: 120px;
+}
 .w-184 {
     width: 184px;
 }

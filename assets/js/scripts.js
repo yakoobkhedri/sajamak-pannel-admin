@@ -55,3 +55,18 @@ ScrollReveal().reveal('.right', {
 // datapicker
 
 jalaliDatepicker.startWatch();
+
+// sweet alert
+
+let submitForm=document.getElementById('submit');
+
+submitForm.addEventListener('click',function (e) {
+  e.preventDefault();
+  Swal.fire({
+    position: 'top-center',
+    icon: 'success',
+    title: 'با موفقیت ثبت شد',
+    showConfirmButton: false,
+    timer: 3000
+  })
+})

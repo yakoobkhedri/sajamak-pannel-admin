@@ -173,34 +173,40 @@
                 <!-- table -->
                 <div class="bg-white rounded-4 pb-3">
                     <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between p-3">
-                        <p class="d-flex align-items-center gap-2 font-bold mb-0 text-secondary">
+                        <p class="d-flex align-items-center gap-2 font-bold mb-0">
                             <img alt="icon" src="assets/img/userinfo.svg">
                            درخواست ها
                         </p>
                     </div>
                     <div class="px-3">
-                        <ul class="nav nav-tabs p-0 font-bold fs-14" id="myTab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
-                                    data-bs-target="#home-tab-pane" type="button" role="tab"
-                                    aria-controls="home-tab-pane" aria-selected="true">امور اداری</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
-                                    data-bs-target="#profile-tab-pane" type="button" role="tab"
-                                    aria-controls="profile-tab-pane" aria-selected="false">امور پیمانکاری</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
-                                    data-bs-target="#contact-tab-pane" type="button" role="tab"
-                                    aria-controls="contact-tab-pane" aria-selected="false">امور مشاوره</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="legal-tab" data-bs-toggle="tab"
-                                    data-bs-target="#legal-tab-pane" type="button" role="tab"
-                                    aria-controls="legal-tab-pane" aria-selected="false">امور حقوقی</button>
-                            </li>
-                        </ul>
+                        <div class="d-flex align-items-center justify-content-between border-bottom">
+                            <ul class="nav nav-tabs border-bottom-0 p-0 font-bold fs-14" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link pb-4 active" id="home-tab" data-bs-toggle="tab"
+                                        data-bs-target="#home-tab-pane" type="button" role="tab"
+                                        aria-controls="home-tab-pane" aria-selected="true">امور اداری</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link pb-4" id="profile-tab" data-bs-toggle="tab"
+                                        data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                        aria-controls="profile-tab-pane" aria-selected="false">امور پیمانکاری</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link pb-4" id="contact-tab" data-bs-toggle="tab"
+                                        data-bs-target="#contact-tab-pane" type="button" role="tab"
+                                        aria-controls="contact-tab-pane" aria-selected="false">امور مشاوره</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link pb-4" id="legal-tab" data-bs-toggle="tab"
+                                        data-bs-target="#legal-tab-pane" type="button" role="tab"
+                                        aria-controls="legal-tab-pane" aria-selected="false">امور حقوقی</button>
+                                </li>
+                            </ul>
+                            <a href="new-request.html" class="btn btn-info mb-2 d-flex align-items-center gap-2 fw-bold text-white fs-7 px-4">
+                                <p class="fs-4 mb-0">+</p>
+                                <p class="mb-0">درخواست جدید</p>
+                              </a>
+                        </div>
                         <div class="tab-content mt-4" id="myTabContent">
                             <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
                                 aria-labelledby="home-tab" tabindex="0">

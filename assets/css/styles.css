@@ -197,6 +197,19 @@ a {
  max-width: 900px;
  width: 100%;
 }
+ .filepond--drop-label {
+    background-color: transparent;
+ }
+ .filepond--label-action {
+     text-decoration-color: #babdc0;
+ }
+
+ .filepond--panel-root {
+     background-color: #edf0f4;
+ }
+ .filepond--root {
+     width: 170px;
+ }
 /* sidebar */
 .sidebar {
     background-color: #1F2A37;

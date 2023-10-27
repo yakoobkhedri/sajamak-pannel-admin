@@ -208,7 +208,26 @@ a {
      background-color: #edf0f4;
  }
  .filepond--root {
-     width: 170px;
+     width: 100%;
+     display: flex;
+ }
+ .filepond--root .filepond--credits[style] {
+   display: none;
+ }
+ .filepond--list.filepond--list {
+   position: static;
+   display: flex;
+ }
+ .filepond--item,.filepond--drop-label {
+    position: static;
+ }
+ .filepond--file {
+  width: 120px;
+  height: 100px;
+ }
+ .filepond--drop-label {
+   margin-left: auto;
+   margin-right: auto;
  }
 /* sidebar */
 .sidebar {
@@ -301,6 +320,9 @@ a {
 @media only screen and (max-width:768px) {
     .w-390 {
         width: 100%;
+    }
+    .filepond--list.filepond--list {
+      display: block;
     }
 }
 

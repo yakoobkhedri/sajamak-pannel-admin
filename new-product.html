@@ -4,17 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel='stylesheet'
-        href='https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css'>
-    <link rel='stylesheet' href='https://unpkg.com/filepond/dist/filepond.min.css'>
-    <link href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css"
-        rel="stylesheet" />
-    <link href="https://unpkg.com/filepond-plugin-image-edit/dist/filepond-plugin-image-edit.css" rel="stylesheet" />
-    <link href="https://unpkg.com/filepond-plugin-image-edit/dist/filepond-plugin-image-edit.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel='stylesheet' type='text/css' media='screen' href='assets/css/styles.css'>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.uploader.css">
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
     <title>جزئیات محصول</title>
 </head>
 
@@ -497,9 +491,7 @@
                                                         </svg>
                                                     </div>
                                                 </div> -->
-                                                <input type="file" class="filepond" name="filepond" multiple
-                                                    data-allow-reorder="true" data-max-file-size="6MB"
-                                                    data-max-files="3" accept="image/png, image/jpeg, image/gif" />
+                                                <input type="text" id="demo1" value="">
                                             </div>
                                         </div>
                                     </div>
@@ -516,45 +508,59 @@
                             </div>
                         </div>
                     </div>
+                </div>
             </main>
         </div>
     </section>
 
-    <script src='https://unpkg.com/filepond-plugin-file-encode/dist/filepond-plugin-file-encode.min.js'></script>
-    <script
-        src='https://unpkg.com/filepond-plugin-file-validate-type/dist/filepond-plugin-file-validate-type.min.js'></script>
-    <script
-        src='https://unpkg.com/filepond-plugin-image-exif-orientation/dist/filepond-plugin-image-exif-orientation.min.js'></script>
-    <script
-        src="https://unpkg.com/filepond-plugin-file-validate-size/dist/filepond-plugin-file-validate-size.js"></script>
-    <script src="https://unpkg.com/filepond-plugin-image-edit/dist/filepond-plugin-image-edit.js"></script>
-    <script src='https://unpkg.com/filepond-plugin-image-crop/dist/filepond-plugin-image-crop.min.js'></script>
-    <script src='https://unpkg.com/filepond-plugin-image-resize/dist/filepond-plugin-image-resize.min.js'></script>
-    <script
-        src='https://unpkg.com/filepond-plugin-image-transform/dist/filepond-plugin-image-transform.min.js'></script>
-    <script src='https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.js'></script>
-    <script src='https://unpkg.com/filepond/dist/filepond.min.js'></script>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <script src="assets/js/scrollreveal.min.js"></script>
-    <script src="assets/js/scripts.js"></script>
+
+    <!-- <script src="assets/js/scripts.js"></script> -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script>
-        FilePond.registerPlugin(
-            FilePondPluginImagePreview,
-            FilePondPluginImageExifOrientation,
-            FilePondPluginFileValidateSize,
-            FilePondPluginImageEdit
-        );
-        FilePond.create(
-            document.querySelector('.filepond'),
-            {
-             labelIdle:`
-             <img src="assets/img/ic-eva_cloud-upload-fill.png" class='d-block mx-auto'>
-             <p class='text-center mb-0 fw-bold'>Upload file</p>
-             `
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="assets/js/jquery.uploader.min.js"></script>
+    <script type="application/javascript">
+        let ajaxConfig = {
+            ajaxRequester: function (config, uploadFile, pCall, sCall, eCall) {
+                let progress = 0
+                let interval = setInterval(() => {
+                    progress += 10;
+                    pCall(progress)
+                    if (progress >= 100) {
+                        clearInterval(interval)
+                        const windowURL = window.URL || window.webkitURL;
+                        sCall({
+                            data: windowURL.createObjectURL(uploadFile.file)
+                        })
+                        // eCall("上传异常")
+                    }
+                }, 300)
             }
-        );
+        }
+        $("#demo1").uploader({ multiple: true, ajaxConfig: ajaxConfig, autoUpload: false }) </script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1VDDWMRSTH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-1VDDWMRSTH');
     </script>
+
+    <script>
+        try {
+            fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function (response) {
+                return true;
+            }).catch(function (e) {
+                var carbonScript = document.createElement("script");
+                carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+                carbonScript.id = "_carbonads_js";
+                document.getElementById("carbon-block").appendChild(carbonScript);
+            });
+        } catch (error) {
+            console.log(error);
+        }
+    </script>
+
 </body>
 
 </html>

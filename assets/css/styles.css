@@ -197,38 +197,12 @@ a {
  max-width: 900px;
  width: 100%;
 }
- .filepond--drop-label {
-    background-color: transparent;
- }
- .filepond--label-action {
-     text-decoration-color: #babdc0;
- }
-
- .filepond--panel-root {
-     background-color: #edf0f4;
- }
- .filepond--root {
-     width: 100%;
-     display: flex;
- }
- .filepond--root .filepond--credits[style] {
-   display: none;
- }
- .filepond--list.filepond--list {
-   position: static;
-   display: flex;
- }
- .filepond--item,.filepond--drop-label {
-    position: static;
- }
- .filepond--file {
-  width: 120px;
-  height: 100px;
- }
- .filepond--drop-label {
-   margin-left: auto;
-   margin-right: auto;
- }
+.fa-plus::before {
+    content: url('../img/ic-eva_cloud-upload-fill.png')!important;
+  }
+  .fa-trash-o::before {
+    content: url('../img/close-circle.png')!important;
+  }
 /* sidebar */
 .sidebar {
     background-color: #1F2A37;

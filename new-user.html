@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
   <link rel='stylesheet' type='text/css' media='screen' href='assets/css/styles.css'>
   <title>کاربر جدید</title>
@@ -250,9 +249,12 @@
                   <div class="col-lg-6">
                     <div class="mb-3">
                       <label for="exampleInputEmail1" class="form-label">رمز عبور</label>
-                      <div class="d-flex align-items-center justify-content-between p-2 border rounded-3">
-                        <input type="password" class="form-control flex-grow-1 border-0">
-                        <img alt="unseen" src="assets/img/unseen.svg" class="cursor">
+                      <div class="d-flex align-items-center justify-content-between p-2 border rounded-3 mt-2">
+                        <input type="password" id="pass1" class="form-control flex-grow-1 border-0" placeholder="رمز عبور قبلی را وارد نمایید">
+                        <div id="togglePassword">
+                          <img alt="seen" src="assets/img/eye.svg" class="cursor">
+                          <img alt="unseen" src="assets/img/eye-slash.svg" class="cursor d-none">
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -312,10 +314,9 @@
   </section>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-  <script src="assets/js/scrollreveal.min.js"></script>
   <script src="assets/js/scripts.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/showPassword.js"></script>
 </body>
 
 </html>

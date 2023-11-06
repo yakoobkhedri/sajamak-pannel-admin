@@ -210,6 +210,12 @@ a {
   .fa-trash-o::before {
     content: url('../img/close-circle.png')!important;
   }
+  #togglePassword.bi-eye img[alt="seen"]{
+    display: none;
+}
+#togglePassword.bi-eye img[alt="unseen"]{
+    display: block!important;
+}
 /* sidebar */
 .sidebar {
     background-color: #1F2A37;

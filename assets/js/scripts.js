@@ -12,6 +12,25 @@ openSidebar.addEventListener('click',function () {
   openSidebar.parentElement.parentElement.parentElement.parentElement.previousElementSibling.classList.add('close');
   overlay.classList.add('active');
 })
+
+// data table
+
+// let table = new DataTable('#myTable');
+$(document).ready( function () {
+  $('#myTable').DataTable({
+    paging: false
+  });
+  $('#myTable2').DataTable({
+    paging: false
+  });
+  $('#myTable3').DataTable({
+    paging: false
+  });
+  $('#myTable4').DataTable({
+    paging: false
+  });
+} );
+
 // datapicker
 
 jalaliDatepicker.startWatch();

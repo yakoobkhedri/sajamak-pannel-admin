@@ -1,0 +1,1335 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/styles.css'>
+    <link rel="stylesheet" href="assets/css/jquery.dataTables.min.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/jalalidatepicker.min.css" />
+    <title>محتوا</title>
+</head>
+
+<body>
+
+    <section class="d-flex mx-0">
+        <div class="px-0 col-2 sidebar transition h-100vh">
+            <div class="py-4 px-3">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center gap-3">
+                        <img alt="" src="assets/img/Vector.png" class="cursor">
+                        <img alt="bell-alert" src="assets/img/bell-alert.svg" class="cursor transition">
+                        <img alt="cog" src="assets/img/cog.svg" class="cursor transition">
+                    </div>
+                    <img alt="" src="assets/img/chevron-double-right.svg" class="cursor transition" id="toggle-sidebar">
+                </div>
+                <div
+                    class="avatar d-flex align-items-center justify-content-center rounded-circle mx-auto mt-5 position-relative">
+                    <div>
+                        <img src="assets/img/69.png">
+                        <div>
+                            <input type="file"
+                                class="position-absolute top-0 end-0 start-0 bottom-0 w-100 z-10 cursor opacity-none">
+                            <img alt="add-circle" src="assets/img/add-circle.svg"
+                                class="position-absolute -bottom-4 start-0 cursor">
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center text-white mt-4 avatar-name transition">
+                    <h6 class="font-bold">صابر علی نژاد</h6>
+                    <p class="text-white-50">مدیر عامل</p>
+                </div>
+            </div>
+            <ul class="m-0 px-0 fw-bold">
+                <li class="px-3 transition">
+                    <a href="requests.html" class="d-flex align-items-center justify-content-between text-white">
+                        <div class="d-flex align-items-center gap-3">
+                            <img alt="menu" src="assets/img/document-text.svg">
+                            <p class="mb-0">درخواست ها</p>
+                        </div>
+                        <img alt="arrow" src="assets/img/arrow-left.png">
+                    </a>
+                </li>
+                <li class="px-3 transition">
+                    <a href="projects.html" class="d-flex align-items-center justify-content-between text-white">
+                        <div class="d-flex align-items-center gap-3">
+                            <img alt="menu" src="assets/img/document-text.svg">
+                            <p class="mb-0">پروژه ها</p>
+                        </div>
+                        <img alt="arrow" src="assets/img/arrow-left.png">
+                    </a>
+                </li>
+                <li class="px-3 transition">
+                    <a href="contractors.html" class="d-flex align-items-center justify-content-between text-white">
+                        <div class="d-flex align-items-center gap-3">
+                            <img alt="menu" src="assets/img/contractor-icon.svg">
+                            <p class="mb-0">پیمانکاران</p>
+                        </div>
+                        <img alt="arrow" src="assets/img/arrow-left.png">
+                    </a>
+                </li>
+                <li class="px-3 transition">
+                    <a href="products.html" class="d-flex align-items-center justify-content-between text-white">
+                        <div class="d-flex align-items-center gap-3">
+                            <img alt="menu" src="assets/img/product-icon.svg">
+                            <p class="mb-0">مواد و محصولات</p>
+                        </div>
+                        <img alt="arrow" src="assets/img/arrow-left.png">
+                    </a>
+                </li>
+                <li class="px-3 transition">
+                    <a href="machines.html" class="d-flex align-items-center justify-content-between text-white">
+                        <div class="d-flex align-items-center gap-3">
+                            <img alt="menu" src="assets/img/truck.svg">
+                            <p class="mb-0">تجهیزات</p>
+                        </div>
+                        <img alt="arrow" src="assets/img/arrow-left.png">
+                    </a>
+                </li>
+                <li class="px-3 transition">
+                    <a href="mines.html" class="d-flex align-items-center justify-content-between text-white">
+                        <div class="d-flex align-items-center gap-3">
+                            <img alt="menu" src="assets/img/mine-icon.svg">
+                            <p class="mb-0">معادن</p>
+                        </div>
+                        <img alt="arrow" src="assets/img/arrow-left.png">
+                    </a>
+                </li>
+                <li class="px-3 transition">
+                    <a href="contracts.html" class="d-flex align-items-center justify-content-between text-white">
+                        <div class="d-flex align-items-center gap-3">
+                            <img alt="menu" src="assets/img/wallet.svg">
+                            <p class="mb-0">قراردادها</p>
+                        </div>
+                        <img alt="arrow" src="assets/img/arrow-left.png">
+                    </a>
+                </li>
+                <li class="px-3 transition active">
+                    <a href="content.html" class="d-flex align-items-center justify-content-between text-white">
+                        <div class="d-flex align-items-center gap-3">
+                            <img alt="menu" src="assets/img/document-text.svg">
+                            <p class="mb-0">محتوا</p>
+                        </div>
+                        <img alt="arrow" src="assets/img/arrow-left.png">
+                    </a>
+                </li>
+                <li class="px-3 transition">
+                    <a href="profile.html" class="d-flex align-items-center justify-content-between text-white">
+                        <div class="d-flex align-items-center gap-3">
+                            <img alt="menu" src="assets/img/user.svg">
+                            <p class="mb-0">مدیریت</p>
+                        </div>
+                        <img alt="arrow" src="assets/img/arrow-left.png">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="p-3 col-10 bg-gray flex-grow-1 h-100vh overflow-auto">
+            <div id="overlay"></div>
+            <!-- header -->
+            <header class="d-flex align-items-lg-center gap-4 flex-column flex-lg-row justify-content-lg-between">
+                <div class="d-flex flex-column flex-md-row align-items-center gap-3">
+                    <div class="d-flex align-items-center gap-3 justify-content-between w-100">
+                        <svg id="openSidebar" xmlns="http://www.w3.org/2000/svg" width="33" height="33"
+                            fill="currentColor" class="bi bi-list d-lg-none cursor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                        </svg>
+                        <a>
+                            <img alt="logo" src="assets/img/Frame 9249.png">
+                        </a>
+                    </div>
+                    <div
+                        class="bg-white rounded-12 w-390 py-1 px-2 border d-flex align-items-center justify-content-between">
+                        <input placeholder="جستجو" class="border-0 outline-none flex-grow-1">
+                        <img alt="search" src="assets/img/Vector.svg">
+                    </div>
+                </div>
+                <div class="d-flex align-items-center gap-3">
+                    <div class="language position-relative cursor">
+                        <div class="d-flex align-items-center gap-2 dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown">
+                            <img alt="language" src="assets/img/artwork.png">
+                            <p class="mb-0 fw-bold fs-7 text-secondary">فارسی</p>
+                        </div>
+                        <ul class="dropdown-menu p-0 m-0 font-bold bg-white shadow-sm rounded-4">
+                            <li class="d-flex align-items-center justify-content-center py-3 gap-3 border-bottom">
+                                <img alt="language" src="assets/img/artwork.png">
+                                <p class="mb-0 fw-bold fs-7 text-secondary">فارسی</p>
+                            </li>
+                            <li class="d-flex align-items-center justify-content-center py-3 gap-3">
+                                <img alt="language" src="assets/img/artwork.png">
+                                <p class="mb-0 fw-bold fs-7 text-secondary">English</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <span class="divider"></span>
+                    <div class="exit d-flex align-items-center gap-2 cursor">
+                        <img alt="language" src="assets/img/exit.svg">
+                        <p class="mb-0 fw-bold fs-7 text-secondary">خروج از حساب </p>
+                    </div>
+                </div>
+            </header>
+            <!-- main -->
+            <main>
+                <!-- breadcrumb -->
+                <nav aria-label="breadcrumb" class="mt-4">
+                    <ol class="breadcrumb fs-7 font-bold">
+                        <li class="breadcrumb-item active text-dark" aria-current="page">محتوا</li>
+                    </ol>
+                </nav>
+                <!-- table -->
+                <div class="bg-white rounded-4 pb-3">
+                    <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between p-3">
+                        <p class="d-flex align-items-center gap-2 font-bold mb-0">
+                            <img alt="icon" src="assets/img/project.png">
+                            محتوا
+                        </p>
+                    </div>
+                    <div class="px-3">
+                        <ul class="nav nav-tabs p-0 font-bold fs-14" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link pb-4 d-flex align-items-center gap-2 active" id="home-tab"
+                                    data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab"
+                                    aria-controls="home-tab-pane" aria-selected="true">صفحه اصلی</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link pb-4 d-flex align-items-center gap-2" id="profile-tab"
+                                    data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                    aria-controls="profile-tab-pane" aria-selected="false">امور اداری و معدنی</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link pb-4 d-flex align-items-center gap-2" id="contact-tab"
+                                    data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab"
+                                    aria-controls="contact-tab-pane" aria-selected="false">صفحه خدمات فنی و
+                                    مهندسی</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link pb-4 d-flex align-items-center gap-2" id="legal-tab"
+                                    data-bs-toggle="tab" data-bs-target="#legal-tab-pane" type="button" role="tab"
+                                    aria-controls="legal-tab-pane" aria-selected="false">پیمانکاری معادن</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link pb-4 d-flex align-items-center gap-2" id="product-tab"
+                                    data-bs-toggle="tab" data-bs-target="#product-tab-pane" type="button" role="tab"
+                                    aria-controls="product-tab-pane" aria-selected="false">مواد و محصولات معدنی</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link pb-4 d-flex align-items-center gap-2" id="faq-tab"
+                                    data-bs-toggle="tab" data-bs-target="#faq-tab-pane" type="button" role="tab"
+                                    aria-controls="faq-tab-pane" aria-selected="false">سوالات متداول</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content mt-4 p-3" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                                aria-labelledby="home-tab" tabindex="0">
+                                <!-- slider -->
+                                <div>
+                                    <h5 class="font-bold mb-4">
+                                        اسلایدر
+                                    </h5>
+                                    <form class="row g-4">
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <div class="d-flex gap-3 flex-wrap position-relative mt-2">
+                                                    <div
+                                                        class="d-flex justify-content-between w-100 position-relative border-dash rounded-3 align-items-center cursor text-secondary bg-gray px-4 py-2 gap-1">
+                                                        <input type="file"
+                                                            class="position-absolute end-0 start-0 bottom-0 top-0 z-10 w-100 opacity-none">
+                                                        <div>
+                                                            <span class="fw-normal fs-14 text-dark d-block mb-2">عکس
+                                                                شاخص</span>
+                                                            <span class="fs-7 text-muted">320*150 پیکسل - حداکثر حجم
+                                                                2مگابایت</span>
+                                                        </div>
+                                                        <div
+                                                            class="d-flex rounded-3 w-48 h-48 flex-column position-relative overflow-hidden align-items-center cursor text-secondary bg-gray gap-1 justify-content-center">
+                                                            <img alt="upload" src="assets/img/asetat.png"
+                                                                class="d-block w-100 h-100">
+                                                            <div
+                                                                class="position-absolute d-flex align-items-center justify-content-center gap-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                    height="24" viewBox="0 0 16 16" fill="none">
+                                                                    <path
+                                                                        d="M6.19993 7.24995C5.28793 7.24995 4.54993 6.51195 4.54993 5.59995C4.54993 4.68795 5.28793 3.94995 6.19993 3.94995C7.11193 3.94995 7.84993 4.68795 7.84993 5.59995C7.84993 6.51195 7.11193 7.24995 6.19993 7.24995ZM6.19993 4.84995C5.78593 4.84995 5.44993 5.18595 5.44993 5.59995C5.44993 6.01395 5.78593 6.34995 6.19993 6.34995C6.61393 6.34995 6.94993 6.01395 6.94993 5.59995C6.94993 5.18595 6.61393 4.84995 6.19993 4.84995Z"
+                                                                        fill="white"></path>
+                                                                    <path
+                                                                        d="M9.79993 14.4499H6.19993C2.94193 14.4499 1.54993 13.0579 1.54993 9.79993V6.19993C1.54993 2.94193 2.94193 1.54993 6.19993 1.54993H8.59993C8.84593 1.54993 9.04993 1.75393 9.04993 1.99993C9.04993 2.24593 8.84593 2.44993 8.59993 2.44993H6.19993C3.43393 2.44993 2.44993 3.43393 2.44993 6.19993V9.79993C2.44993 12.5659 3.43393 13.5499 6.19993 13.5499H9.79993C12.5659 13.5499 13.5499 12.5659 13.5499 9.79993V6.79993C13.5499 6.55393 13.7539 6.34993 13.9999 6.34993C14.2459 6.34993 14.4499 6.55393 14.4499 6.79993V9.79993C14.4499 13.0579 13.0579 14.4499 9.79993 14.4499Z"
+                                                                        fill="white"></path>
+                                                                    <path
+                                                                        d="M13.5499 4.24998H10.2499C10.0039 4.24998 9.79993 4.04598 9.79993 3.79998C9.79993 3.55398 10.0039 3.34998 10.2499 3.34998H13.5499C13.7959 3.34998 13.9999 3.55398 13.9999 3.79998C13.9999 4.04598 13.7959 4.24998 13.5499 4.24998Z"
+                                                                        fill="white"></path>
+                                                                    <path
+                                                                        d="M11.9 5.89995C11.654 5.89995 11.45 5.69595 11.45 5.44995V2.14995C11.45 1.90395 11.654 1.69995 11.9 1.69995C12.146 1.69995 12.35 1.90395 12.35 2.14995V5.44995C12.35 5.69595 12.146 5.89995 11.9 5.89995Z"
+                                                                        fill="white"></path>
+                                                                    <path
+                                                                        d="M2.40196 12.6197C2.25796 12.6197 2.11396 12.5477 2.02996 12.4217C1.89196 12.2177 1.94596 11.9357 2.14996 11.7977L5.10796 9.81172C5.75596 9.37972 6.64996 9.42772 7.23796 9.92572L7.43596 10.0997C7.73596 10.3577 8.24596 10.3577 8.53996 10.0997L11.036 7.95772C11.678 7.41172 12.674 7.41172 13.316 7.95772L14.294 8.79772C14.48 8.95972 14.504 9.24172 14.342 9.43372C14.18 9.61972 13.898 9.64372 13.706 9.48172L12.728 8.64172C12.428 8.38372 11.918 8.38372 11.624 8.64172L9.12796 10.7837C8.49196 11.3297 7.48996 11.3297 6.84796 10.7837L6.64996 10.6097C6.37396 10.3757 5.91796 10.3517 5.61196 10.5617L2.65996 12.5477C2.57596 12.5957 2.48596 12.6197 2.40196 12.6197Z"
+                                                                        fill="white"></path>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">عنوان </label>
+                                                <input type="text" class="form-control" value="عنوان">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">توضیحات </label>
+                                                <textarea rows="7" class="form-control"
+                                                    placeholder="توضیحات"></textarea>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- about -->
+                                <div class="mt-4">
+                                    <h5 class="font-bold mb-4">
+                                        بخش درباره ما
+                                    </h5>
+                                    <form class="row g-4">
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">عنوان </label>
+                                                <input type="text" class="form-control" value="عنوان">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">زیر عنوان</label>
+                                                <input type="text" class="form-control" value="عنوان">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <div class="d-flex gap-3 flex-wrap position-relative mt-2">
+                                                    <div
+                                                        class="d-flex justify-content-between w-100 position-relative border-dash rounded-3 align-items-center cursor text-secondary bg-gray px-4 py-2 gap-1">
+                                                        <input type="file"
+                                                            class="position-absolute end-0 start-0 bottom-0 top-0 z-10 w-100 opacity-none">
+                                                        <div>
+                                                            <span class="fw-normal fs-14 text-dark d-block mb-2">عکس
+                                                                شاخص</span>
+                                                            <span class="fs-7 text-muted">320*150 پیکسل - حداکثر حجم
+                                                                2مگابایت</span>
+                                                        </div>
+                                                        <div
+                                                            class="d-flex rounded-3 w-48 h-48 flex-column position-relative overflow-hidden align-items-center cursor text-secondary bg-gray gap-1 justify-content-center">
+                                                            <img alt="upload" src="assets/img/asetat.png"
+                                                                class="d-block w-100 h-100">
+                                                            <div
+                                                                class="position-absolute d-flex align-items-center justify-content-center gap-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                    height="24" viewBox="0 0 16 16" fill="none">
+                                                                    <path
+                                                                        d="M6.19993 7.24995C5.28793 7.24995 4.54993 6.51195 4.54993 5.59995C4.54993 4.68795 5.28793 3.94995 6.19993 3.94995C7.11193 3.94995 7.84993 4.68795 7.84993 5.59995C7.84993 6.51195 7.11193 7.24995 6.19993 7.24995ZM6.19993 4.84995C5.78593 4.84995 5.44993 5.18595 5.44993 5.59995C5.44993 6.01395 5.78593 6.34995 6.19993 6.34995C6.61393 6.34995 6.94993 6.01395 6.94993 5.59995C6.94993 5.18595 6.61393 4.84995 6.19993 4.84995Z"
+                                                                        fill="white"></path>
+                                                                    <path
+                                                                        d="M9.79993 14.4499H6.19993C2.94193 14.4499 1.54993 13.0579 1.54993 9.79993V6.19993C1.54993 2.94193 2.94193 1.54993 6.19993 1.54993H8.59993C8.84593 1.54993 9.04993 1.75393 9.04993 1.99993C9.04993 2.24593 8.84593 2.44993 8.59993 2.44993H6.19993C3.43393 2.44993 2.44993 3.43393 2.44993 6.19993V9.79993C2.44993 12.5659 3.43393 13.5499 6.19993 13.5499H9.79993C12.5659 13.5499 13.5499 12.5659 13.5499 9.79993V6.79993C13.5499 6.55393 13.7539 6.34993 13.9999 6.34993C14.2459 6.34993 14.4499 6.55393 14.4499 6.79993V9.79993C14.4499 13.0579 13.0579 14.4499 9.79993 14.4499Z"
+                                                                        fill="white"></path>
+                                                                    <path
+                                                                        d="M13.5499 4.24998H10.2499C10.0039 4.24998 9.79993 4.04598 9.79993 3.79998C9.79993 3.55398 10.0039 3.34998 10.2499 3.34998H13.5499C13.7959 3.34998 13.9999 3.55398 13.9999 3.79998C13.9999 4.04598 13.7959 4.24998 13.5499 4.24998Z"
+                                                                        fill="white"></path>
+                                                                    <path
+                                                                        d="M11.9 5.89995C11.654 5.89995 11.45 5.69595 11.45 5.44995V2.14995C11.45 1.90395 11.654 1.69995 11.9 1.69995C12.146 1.69995 12.35 1.90395 12.35 2.14995V5.44995C12.35 5.69595 12.146 5.89995 11.9 5.89995Z"
+                                                                        fill="white"></path>
+                                                                    <path
+                                                                        d="M2.40196 12.6197C2.25796 12.6197 2.11396 12.5477 2.02996 12.4217C1.89196 12.2177 1.94596 11.9357 2.14996 11.7977L5.10796 9.81172C5.75596 9.37972 6.64996 9.42772 7.23796 9.92572L7.43596 10.0997C7.73596 10.3577 8.24596 10.3577 8.53996 10.0997L11.036 7.95772C11.678 7.41172 12.674 7.41172 13.316 7.95772L14.294 8.79772C14.48 8.95972 14.504 9.24172 14.342 9.43372C14.18 9.61972 13.898 9.64372 13.706 9.48172L12.728 8.64172C12.428 8.38372 11.918 8.38372 11.624 8.64172L9.12796 10.7837C8.49196 11.3297 7.48996 11.3297 6.84796 10.7837L6.64996 10.6097C6.37396 10.3757 5.91796 10.3517 5.61196 10.5617L2.65996 12.5477C2.57596 12.5957 2.48596 12.6197 2.40196 12.6197Z"
+                                                                        fill="white"></path>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <div class="d-flex gap-3 flex-wrap position-relative mt-2">
+                                                    <div
+                                                        class="d-flex justify-content-between w-100 position-relative border-dash rounded-3 align-items-center cursor text-secondary bg-gray px-4 py-2 gap-1">
+                                                        <input type="file"
+                                                            class="position-absolute end-0 start-0 bottom-0 top-0 z-10 w-100 opacity-none">
+                                                        <div>
+                                                            <span
+                                                                class="fw-normal fs-14 text-dark d-block mb-2">فیلم</span>
+                                                            <span class="fs-7 text-muted">320*150 پیکسل - حداکثر حجم
+                                                                2مگابایت</span>
+                                                        </div>
+                                                        <div
+                                                            class="d-flex rounded-3 w-48 h-48 flex-column position-relative overflow-hidden align-items-center cursor text-secondary bg-gray gap-1 justify-content-center">
+                                                            <img alt="upload" src="assets/img/asetat.png"
+                                                                class="d-block w-100 h-100">
+                                                            <div
+                                                                class="position-absolute d-flex align-items-center justify-content-center gap-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                    height="24" viewBox="0 0 16 16" fill="none">
+                                                                    <path
+                                                                        d="M6.19993 7.24995C5.28793 7.24995 4.54993 6.51195 4.54993 5.59995C4.54993 4.68795 5.28793 3.94995 6.19993 3.94995C7.11193 3.94995 7.84993 4.68795 7.84993 5.59995C7.84993 6.51195 7.11193 7.24995 6.19993 7.24995ZM6.19993 4.84995C5.78593 4.84995 5.44993 5.18595 5.44993 5.59995C5.44993 6.01395 5.78593 6.34995 6.19993 6.34995C6.61393 6.34995 6.94993 6.01395 6.94993 5.59995C6.94993 5.18595 6.61393 4.84995 6.19993 4.84995Z"
+                                                                        fill="white"></path>
+                                                                    <path
+                                                                        d="M9.79993 14.4499H6.19993C2.94193 14.4499 1.54993 13.0579 1.54993 9.79993V6.19993C1.54993 2.94193 2.94193 1.54993 6.19993 1.54993H8.59993C8.84593 1.54993 9.04993 1.75393 9.04993 1.99993C9.04993 2.24593 8.84593 2.44993 8.59993 2.44993H6.19993C3.43393 2.44993 2.44993 3.43393 2.44993 6.19993V9.79993C2.44993 12.5659 3.43393 13.5499 6.19993 13.5499H9.79993C12.5659 13.5499 13.5499 12.5659 13.5499 9.79993V6.79993C13.5499 6.55393 13.7539 6.34993 13.9999 6.34993C14.2459 6.34993 14.4499 6.55393 14.4499 6.79993V9.79993C14.4499 13.0579 13.0579 14.4499 9.79993 14.4499Z"
+                                                                        fill="white"></path>
+                                                                    <path
+                                                                        d="M13.5499 4.24998H10.2499C10.0039 4.24998 9.79993 4.04598 9.79993 3.79998C9.79993 3.55398 10.0039 3.34998 10.2499 3.34998H13.5499C13.7959 3.34998 13.9999 3.55398 13.9999 3.79998C13.9999 4.04598 13.7959 4.24998 13.5499 4.24998Z"
+                                                                        fill="white"></path>
+                                                                    <path
+                                                                        d="M11.9 5.89995C11.654 5.89995 11.45 5.69595 11.45 5.44995V2.14995C11.45 1.90395 11.654 1.69995 11.9 1.69995C12.146 1.69995 12.35 1.90395 12.35 2.14995V5.44995C12.35 5.69595 12.146 5.89995 11.9 5.89995Z"
+                                                                        fill="white"></path>
+                                                                    <path
+                                                                        d="M2.40196 12.6197C2.25796 12.6197 2.11396 12.5477 2.02996 12.4217C1.89196 12.2177 1.94596 11.9357 2.14996 11.7977L5.10796 9.81172C5.75596 9.37972 6.64996 9.42772 7.23796 9.92572L7.43596 10.0997C7.73596 10.3577 8.24596 10.3577 8.53996 10.0997L11.036 7.95772C11.678 7.41172 12.674 7.41172 13.316 7.95772L14.294 8.79772C14.48 8.95972 14.504 9.24172 14.342 9.43372C14.18 9.61972 13.898 9.64372 13.706 9.48172L12.728 8.64172C12.428 8.38372 11.918 8.38372 11.624 8.64172L9.12796 10.7837C8.49196 11.3297 7.48996 11.3297 6.84796 10.7837L6.64996 10.6097C6.37396 10.3757 5.91796 10.3517 5.61196 10.5617L2.65996 12.5477C2.57596 12.5957 2.48596 12.6197 2.40196 12.6197Z"
+                                                                        fill="white"></path>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">توضیحات </label>
+                                                <textarea rows="7" class="form-control"
+                                                    placeholder="توضیحات"></textarea>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- laws -->
+                                <div class="mt-4">
+                                    <h5 class="font-bold mb-4">
+                                        بخش قوانین و آیین نامه ها
+                                    </h5>
+                                    <form class="row g-4">
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">عنوان </label>
+                                                <input type="text" class="form-control" value="عنوان">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">زیر عنوان</label>
+                                                <input type="text" class="form-control" value="عنوان">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">شماره</label>
+                                                <input type="text" class="form-control" value="عنوان">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">تاریخ شروع</label>
+                                                <input type="text" class="date rounded-3 form-control" data-jdp="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">مرجع صادر
+                                                    کننده</label>
+                                                <input type="text" class="form-control" value="عنوان">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <div class="d-flex gap-3 flex-wrap position-relative mt-2">
+                                                    <div
+                                                        class="d-flex justify-content-between w-100 position-relative border-dash rounded-3 align-items-center cursor text-secondary bg-gray px-4 py-2 gap-1">
+                                                        <input type="file"
+                                                            class="position-absolute end-0 start-0 bottom-0 top-0 z-10 w-100 opacity-none">
+                                                        <div>
+                                                            <span class="fw-normal fs-14 text-dark d-block mb-2">عکس
+                                                                شاخص</span>
+                                                            <span class="fs-7 text-muted">320*150 پیکسل - حداکثر حجم
+                                                                2مگابایت</span>
+                                                        </div>
+                                                        <div
+                                                            class="d-flex rounded-3 w-48 h-48 flex-column position-relative overflow-hidden align-items-center cursor text-secondary bg-gray gap-1 justify-content-center">
+                                                            <img alt="upload" src="assets/img/asetat.png"
+                                                                class="d-block w-100 h-100">
+                                                            <div
+                                                                class="position-absolute d-flex align-items-center justify-content-center gap-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                    height="24" viewBox="0 0 16 16" fill="none">
+                                                                    <path
+                                                                        d="M6.19993 7.24995C5.28793 7.24995 4.54993 6.51195 4.54993 5.59995C4.54993 4.68795 5.28793 3.94995 6.19993 3.94995C7.11193 3.94995 7.84993 4.68795 7.84993 5.59995C7.84993 6.51195 7.11193 7.24995 6.19993 7.24995ZM6.19993 4.84995C5.78593 4.84995 5.44993 5.18595 5.44993 5.59995C5.44993 6.01395 5.78593 6.34995 6.19993 6.34995C6.61393 6.34995 6.94993 6.01395 6.94993 5.59995C6.94993 5.18595 6.61393 4.84995 6.19993 4.84995Z"
+                                                                        fill="white"></path>
+                                                                    <path
+                                                                        d="M9.79993 14.4499H6.19993C2.94193 14.4499 1.54993 13.0579 1.54993 9.79993V6.19993C1.54993 2.94193 2.94193 1.54993 6.19993 1.54993H8.59993C8.84593 1.54993 9.04993 1.75393 9.04993 1.99993C9.04993 2.24593 8.84593 2.44993 8.59993 2.44993H6.19993C3.43393 2.44993 2.44993 3.43393 2.44993 6.19993V9.79993C2.44993 12.5659 3.43393 13.5499 6.19993 13.5499H9.79993C12.5659 13.5499 13.5499 12.5659 13.5499 9.79993V6.79993C13.5499 6.55393 13.7539 6.34993 13.9999 6.34993C14.2459 6.34993 14.4499 6.55393 14.4499 6.79993V9.79993C14.4499 13.0579 13.0579 14.4499 9.79993 14.4499Z"
+                                                                        fill="white"></path>
+                                                                    <path
+                                                                        d="M13.5499 4.24998H10.2499C10.0039 4.24998 9.79993 4.04598 9.79993 3.79998C9.79993 3.55398 10.0039 3.34998 10.2499 3.34998H13.5499C13.7959 3.34998 13.9999 3.55398 13.9999 3.79998C13.9999 4.04598 13.7959 4.24998 13.5499 4.24998Z"
+                                                                        fill="white"></path>
+                                                                    <path
+                                                                        d="M11.9 5.89995C11.654 5.89995 11.45 5.69595 11.45 5.44995V2.14995C11.45 1.90395 11.654 1.69995 11.9 1.69995C12.146 1.69995 12.35 1.90395 12.35 2.14995V5.44995C12.35 5.69595 12.146 5.89995 11.9 5.89995Z"
+                                                                        fill="white"></path>
+                                                                    <path
+                                                                        d="M2.40196 12.6197C2.25796 12.6197 2.11396 12.5477 2.02996 12.4217C1.89196 12.2177 1.94596 11.9357 2.14996 11.7977L5.10796 9.81172C5.75596 9.37972 6.64996 9.42772 7.23796 9.92572L7.43596 10.0997C7.73596 10.3577 8.24596 10.3577 8.53996 10.0997L11.036 7.95772C11.678 7.41172 12.674 7.41172 13.316 7.95772L14.294 8.79772C14.48 8.95972 14.504 9.24172 14.342 9.43372C14.18 9.61972 13.898 9.64372 13.706 9.48172L12.728 8.64172C12.428 8.38372 11.918 8.38372 11.624 8.64172L9.12796 10.7837C8.49196 11.3297 7.48996 11.3297 6.84796 10.7837L6.64996 10.6097C6.37396 10.3757 5.91796 10.3517 5.61196 10.5617L2.65996 12.5477C2.57596 12.5957 2.48596 12.6197 2.40196 12.6197Z"
+                                                                        fill="white"></path>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">توضیحات </label>
+                                                <textarea rows="7" class="form-control"
+                                                    placeholder="توضیحات"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">فایل پیوست</label>
+                                                <div
+                                                    class="d-flex align-items-center cursor justify-content-between rounded-3 bg-gray p-4">
+                                                    <div
+                                                        class="d-flex align-items-center gap-4 position-relative justify-content-around">
+                                                        <input type="file"
+                                                            class="position-absolute w-100 h-100 top-0 bottom-0 end-0 start-0 cursor opacity-none">
+                                                        <img alt="file" src="assets/img/pdf.png" class="img-fluid">
+                                                        <div>
+                                                            <p class="font-bold mb-0 h5">Document Name .pdf</p>
+                                                            <small class="text-muted fw-bold">77KB. 1401/02/21، 11:33
+                                                            </small>
+                                                        </div>
+                                                        <img alt="file" src="assets/img/download.png" class="img-fluid">
+                                                    </div>
+                                                    <div
+                                                        class="d-flex align-items-center gap-4 position-relative justify-content-around">
+                                                        <input type="file"
+                                                            class="position-absolute w-100 h-100 top-0 bottom-0 end-0 start-0 cursor opacity-none">
+                                                        <img alt="file" src="assets/img/pdf.png" class="img-fluid">
+                                                        <div>
+                                                            <p class="font-bold mb-0 h5">Image Name .jpg</p>
+                                                            <small class="text-muted fw-bold">77KB. 1401/02/21، 11:33
+                                                            </small>
+                                                        </div>
+                                                        <img alt="file" src="assets/img/jpg.png" class="img-fluid">
+                                                    </div>
+                                                    <div
+                                                        class="d-flex align-items-center gap-4 position-relative justify-content-around">
+                                                        <input type="file"
+                                                            class="position-absolute w-100 h-100 top-0 bottom-0 end-0 start-0 cursor opacity-none">
+                                                        <img alt="file" src="assets/img/png.png" class="img-fluid">
+                                                        <div>
+                                                            <p class="font-bold mb-0 h5">File Name .png</p>
+                                                            <small class="text-muted fw-bold">77KB. 1401/02/21، 11:33
+                                                            </small>
+                                                        </div>
+                                                        <img alt="file" src="assets/img/download.png" class="img-fluid">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- stat -->
+                                <div class="mt-4">
+                                    <h5 class="font-bold mb-4">
+                                        بخش آمار
+                                    </h5>
+                                    <form class="row g-4">
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">عنوان </label>
+                                                <input type="text" class="form-control" value="عنوان">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">زیر عنوان</label>
+                                                <input type="text" class="form-control" value="عنوان">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">توضیحات </label>
+                                                <textarea rows="7" class="form-control"
+                                                    placeholder="توضیحات"></textarea>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- blog -->
+                                <div class="mt-4">
+                                    <h5 class="font-bold mb-4">
+                                        بخش بلاگ
+                                    </h5>
+                                    <form class="row g-4">
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">عنوان </label>
+                                                <input type="text" class="form-control" value="عنوان">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <div class="d-flex gap-3 flex-wrap position-relative mt-2">
+                                                    <div
+                                                        class="d-flex justify-content-between w-100 position-relative border-dash rounded-3 align-items-center cursor text-secondary bg-gray px-4 py-2 gap-1">
+                                                        <input type="file"
+                                                            class="position-absolute end-0 start-0 bottom-0 top-0 z-10 w-100 opacity-none">
+                                                        <div>
+                                                            <span class="fw-normal fs-14 text-dark d-block mb-2">عکس
+                                                                شاخص</span>
+                                                            <span class="fs-7 text-muted">320*150 پیکسل - حداکثر حجم
+                                                                2مگابایت</span>
+                                                        </div>
+                                                        <div
+                                                            class="d-flex rounded-3 w-48 h-48 flex-column position-relative overflow-hidden align-items-center cursor text-secondary bg-gray gap-1 justify-content-center">
+                                                            <img alt="upload" src="assets/img/asetat.png"
+                                                                class="d-block w-100 h-100">
+                                                            <div
+                                                                class="position-absolute d-flex align-items-center justify-content-center gap-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                    height="24" viewBox="0 0 16 16" fill="none">
+                                                                    <path
+                                                                        d="M6.19993 7.24995C5.28793 7.24995 4.54993 6.51195 4.54993 5.59995C4.54993 4.68795 5.28793 3.94995 6.19993 3.94995C7.11193 3.94995 7.84993 4.68795 7.84993 5.59995C7.84993 6.51195 7.11193 7.24995 6.19993 7.24995ZM6.19993 4.84995C5.78593 4.84995 5.44993 5.18595 5.44993 5.59995C5.44993 6.01395 5.78593 6.34995 6.19993 6.34995C6.61393 6.34995 6.94993 6.01395 6.94993 5.59995C6.94993 5.18595 6.61393 4.84995 6.19993 4.84995Z"
+                                                                        fill="white"></path>
+                                                                    <path
+                                                                        d="M9.79993 14.4499H6.19993C2.94193 14.4499 1.54993 13.0579 1.54993 9.79993V6.19993C1.54993 2.94193 2.94193 1.54993 6.19993 1.54993H8.59993C8.84593 1.54993 9.04993 1.75393 9.04993 1.99993C9.04993 2.24593 8.84593 2.44993 8.59993 2.44993H6.19993C3.43393 2.44993 2.44993 3.43393 2.44993 6.19993V9.79993C2.44993 12.5659 3.43393 13.5499 6.19993 13.5499H9.79993C12.5659 13.5499 13.5499 12.5659 13.5499 9.79993V6.79993C13.5499 6.55393 13.7539 6.34993 13.9999 6.34993C14.2459 6.34993 14.4499 6.55393 14.4499 6.79993V9.79993C14.4499 13.0579 13.0579 14.4499 9.79993 14.4499Z"
+                                                                        fill="white"></path>
+                                                                    <path
+                                                                        d="M13.5499 4.24998H10.2499C10.0039 4.24998 9.79993 4.04598 9.79993 3.79998C9.79993 3.55398 10.0039 3.34998 10.2499 3.34998H13.5499C13.7959 3.34998 13.9999 3.55398 13.9999 3.79998C13.9999 4.04598 13.7959 4.24998 13.5499 4.24998Z"
+                                                                        fill="white"></path>
+                                                                    <path
+                                                                        d="M11.9 5.89995C11.654 5.89995 11.45 5.69595 11.45 5.44995V2.14995C11.45 1.90395 11.654 1.69995 11.9 1.69995C12.146 1.69995 12.35 1.90395 12.35 2.14995V5.44995C12.35 5.69595 12.146 5.89995 11.9 5.89995Z"
+                                                                        fill="white"></path>
+                                                                    <path
+                                                                        d="M2.40196 12.6197C2.25796 12.6197 2.11396 12.5477 2.02996 12.4217C1.89196 12.2177 1.94596 11.9357 2.14996 11.7977L5.10796 9.81172C5.75596 9.37972 6.64996 9.42772 7.23796 9.92572L7.43596 10.0997C7.73596 10.3577 8.24596 10.3577 8.53996 10.0997L11.036 7.95772C11.678 7.41172 12.674 7.41172 13.316 7.95772L14.294 8.79772C14.48 8.95972 14.504 9.24172 14.342 9.43372C14.18 9.61972 13.898 9.64372 13.706 9.48172L12.728 8.64172C12.428 8.38372 11.918 8.38372 11.624 8.64172L9.12796 10.7837C8.49196 11.3297 7.48996 11.3297 6.84796 10.7837L6.64996 10.6097C6.37396 10.3757 5.91796 10.3517 5.61196 10.5617L2.65996 12.5477C2.57596 12.5957 2.48596 12.6197 2.40196 12.6197Z"
+                                                                        fill="white"></path>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">توضیحات </label>
+                                                <textarea rows="7" class="form-control"
+                                                    placeholder="توضیحات"></textarea>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- footer -->
+                                <div class="mt-4">
+                                    <h5 class="font-bold mb-4">
+                                        بخش فوتر
+                                    </h5>
+                                    <form class="row g-4">
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <div class="d-flex gap-3 flex-wrap position-relative mt-2">
+                                                    <div
+                                                        class="d-flex justify-content-between w-100 position-relative border-dash rounded-3 align-items-center cursor text-secondary bg-gray px-4 py-2 gap-1">
+                                                        <input type="file"
+                                                            class="position-absolute end-0 start-0 bottom-0 top-0 z-10 w-100 opacity-none">
+                                                        <div>
+                                                            <span class="fw-normal fs-14 text-dark d-block mb-2">عکس
+                                                                لوگو</span>
+                                                            <span class="fs-7 text-muted">320*150 پیکسل - حداکثر حجم
+                                                                2مگابایت</span>
+                                                        </div>
+                                                        <div
+                                                            class="d-flex rounded-3 w-48 h-48 flex-column position-relative overflow-hidden align-items-center cursor text-secondary bg-gray gap-1 justify-content-center">
+                                                            <img alt="upload" src="assets/img/asetat.png"
+                                                                class="d-block w-100 h-100">
+                                                            <div
+                                                                class="position-absolute d-flex align-items-center justify-content-center gap-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                    height="24" viewBox="0 0 16 16" fill="none">
+                                                                    <path
+                                                                        d="M6.19993 7.24995C5.28793 7.24995 4.54993 6.51195 4.54993 5.59995C4.54993 4.68795 5.28793 3.94995 6.19993 3.94995C7.11193 3.94995 7.84993 4.68795 7.84993 5.59995C7.84993 6.51195 7.11193 7.24995 6.19993 7.24995ZM6.19993 4.84995C5.78593 4.84995 5.44993 5.18595 5.44993 5.59995C5.44993 6.01395 5.78593 6.34995 6.19993 6.34995C6.61393 6.34995 6.94993 6.01395 6.94993 5.59995C6.94993 5.18595 6.61393 4.84995 6.19993 4.84995Z"
+                                                                        fill="white"></path>
+                                                                    <path
+                                                                        d="M9.79993 14.4499H6.19993C2.94193 14.4499 1.54993 13.0579 1.54993 9.79993V6.19993C1.54993 2.94193 2.94193 1.54993 6.19993 1.54993H8.59993C8.84593 1.54993 9.04993 1.75393 9.04993 1.99993C9.04993 2.24593 8.84593 2.44993 8.59993 2.44993H6.19993C3.43393 2.44993 2.44993 3.43393 2.44993 6.19993V9.79993C2.44993 12.5659 3.43393 13.5499 6.19993 13.5499H9.79993C12.5659 13.5499 13.5499 12.5659 13.5499 9.79993V6.79993C13.5499 6.55393 13.7539 6.34993 13.9999 6.34993C14.2459 6.34993 14.4499 6.55393 14.4499 6.79993V9.79993C14.4499 13.0579 13.0579 14.4499 9.79993 14.4499Z"
+                                                                        fill="white"></path>
+                                                                    <path
+                                                                        d="M13.5499 4.24998H10.2499C10.0039 4.24998 9.79993 4.04598 9.79993 3.79998C9.79993 3.55398 10.0039 3.34998 10.2499 3.34998H13.5499C13.7959 3.34998 13.9999 3.55398 13.9999 3.79998C13.9999 4.04598 13.7959 4.24998 13.5499 4.24998Z"
+                                                                        fill="white"></path>
+                                                                    <path
+                                                                        d="M11.9 5.89995C11.654 5.89995 11.45 5.69595 11.45 5.44995V2.14995C11.45 1.90395 11.654 1.69995 11.9 1.69995C12.146 1.69995 12.35 1.90395 12.35 2.14995V5.44995C12.35 5.69595 12.146 5.89995 11.9 5.89995Z"
+                                                                        fill="white"></path>
+                                                                    <path
+                                                                        d="M2.40196 12.6197C2.25796 12.6197 2.11396 12.5477 2.02996 12.4217C1.89196 12.2177 1.94596 11.9357 2.14996 11.7977L5.10796 9.81172C5.75596 9.37972 6.64996 9.42772 7.23796 9.92572L7.43596 10.0997C7.73596 10.3577 8.24596 10.3577 8.53996 10.0997L11.036 7.95772C11.678 7.41172 12.674 7.41172 13.316 7.95772L14.294 8.79772C14.48 8.95972 14.504 9.24172 14.342 9.43372C14.18 9.61972 13.898 9.64372 13.706 9.48172L12.728 8.64172C12.428 8.38372 11.918 8.38372 11.624 8.64172L9.12796 10.7837C8.49196 11.3297 7.48996 11.3297 6.84796 10.7837L6.64996 10.6097C6.37396 10.3757 5.91796 10.3517 5.61196 10.5617L2.65996 12.5477C2.57596 12.5957 2.48596 12.6197 2.40196 12.6197Z"
+                                                                        fill="white"></path>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                              <label for="exampleInputEmail1" class="form-label">لینک های دسترسی</label>
+                                              <select class="form-select">
+                                                <option>صفحه اصلی</option>
+                                                <option>خدمات</option>
+                                                <option>درباره ما</option>
+                                                <option>تماس با ما</option>
+                                              </select>
+                                            </div>
+                                          </div>
+                                          <div class="col-lg-6">
+                                            <div class="mb-3">
+                                              <label for="exampleInputEmail1" class="form-label">لینک های مهم</label>
+                                              <select class="form-select">
+                                                <option>سوالات متداول</option>
+                                                <option>استخدامی</option>
+                                                <option>تبلیغات</option>
+                                                <option>اخبار و مقالات</option>
+                                              </select>
+                                            </div>
+                                          </div>
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">آدرس </label>
+                                                <input type="text" class="form-control" value="آدرس">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">شماره تماس</label>
+                                                <input type="tel" class="form-control" value="0914....">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">ایمیل</label>
+                                                <input type="email" class="form-control" value="ایمیل">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">توضیحات </label>
+                                                <textarea rows="7" class="form-control"
+                                                    placeholder="توضیحات"></textarea>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel"
+                                aria-labelledby="profile-tab" tabindex="0">
+                                 <!-- banner -->
+                                 <div>
+                                    <h5 class="font-bold mb-4">
+                                        بخش بنر
+                                    </h5>
+                                    <form class="row g-4">
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <div class="d-flex gap-3 flex-wrap position-relative mt-2">
+                                                    <div
+                                                        class="d-flex justify-content-between w-100 position-relative border-dash rounded-3 align-items-center cursor text-secondary bg-gray px-4 py-2 gap-1">
+                                                        <input type="file"
+                                                            class="position-absolute end-0 start-0 bottom-0 top-0 z-10 w-100 opacity-none">
+                                                        <div>
+                                                            <span class="fw-normal fs-14 text-dark d-block mb-2">عکس
+                                                                شاخص</span>
+                                                            <span class="fs-7 text-muted">320*150 پیکسل - حداکثر حجم
+                                                                2مگابایت</span>
+                                                        </div>
+                                                        <div
+                                                            class="d-flex rounded-3 w-48 h-48 flex-column position-relative overflow-hidden align-items-center cursor text-secondary bg-gray gap-1 justify-content-center">
+                                                            <img alt="upload" src="assets/img/asetat.png"
+                                                                class="d-block w-100 h-100">
+                                                            <div
+                                                                class="position-absolute d-flex align-items-center justify-content-center gap-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                    height="24" viewBox="0 0 16 16" fill="none">
+                                                                    <path
+                                                                        d="M6.19993 7.24995C5.28793 7.24995 4.54993 6.51195 4.54993 5.59995C4.54993 4.68795 5.28793 3.94995 6.19993 3.94995C7.11193 3.94995 7.84993 4.68795 7.84993 5.59995C7.84993 6.51195 7.11193 7.24995 6.19993 7.24995ZM6.19993 4.84995C5.78593 4.84995 5.44993 5.18595 5.44993 5.59995C5.44993 6.01395 5.78593 6.34995 6.19993 6.34995C6.61393 6.34995 6.94993 6.01395 6.94993 5.59995C6.94993 5.18595 6.61393 4.84995 6.19993 4.84995Z"
+                                                                        fill="white"></path>
+                                                                    <path
+                                                                        d="M9.79993 14.4499H6.19993C2.94193 14.4499 1.54993 13.0579 1.54993 9.79993V6.19993C1.54993 2.94193 2.94193 1.54993 6.19993 1.54993H8.59993C8.84593 1.54993 9.04993 1.75393 9.04993 1.99993C9.04993 2.24593 8.84593 2.44993 8.59993 2.44993H6.19993C3.43393 2.44993 2.44993 3.43393 2.44993 6.19993V9.79993C2.44993 12.5659 3.43393 13.5499 6.19993 13.5499H9.79993C12.5659 13.5499 13.5499 12.5659 13.5499 9.79993V6.79993C13.5499 6.55393 13.7539 6.34993 13.9999 6.34993C14.2459 6.34993 14.4499 6.55393 14.4499 6.79993V9.79993C14.4499 13.0579 13.0579 14.4499 9.79993 14.4499Z"
+                                                                        fill="white"></path>
+                                                                    <path
+                                                                        d="M13.5499 4.24998H10.2499C10.0039 4.24998 9.79993 4.04598 9.79993 3.79998C9.79993 3.55398 10.0039 3.34998 10.2499 3.34998H13.5499C13.7959 3.34998 13.9999 3.55398 13.9999 3.79998C13.9999 4.04598 13.7959 4.24998 13.5499 4.24998Z"
+                                                                        fill="white"></path>
+                                                                    <path
+                                                                        d="M11.9 5.89995C11.654 5.89995 11.45 5.69595 11.45 5.44995V2.14995C11.45 1.90395 11.654 1.69995 11.9 1.69995C12.146 1.69995 12.35 1.90395 12.35 2.14995V5.44995C12.35 5.69595 12.146 5.89995 11.9 5.89995Z"
+                                                                        fill="white"></path>
+                                                                    <path
+                                                                        d="M2.40196 12.6197C2.25796 12.6197 2.11396 12.5477 2.02996 12.4217C1.89196 12.2177 1.94596 11.9357 2.14996 11.7977L5.10796 9.81172C5.75596 9.37972 6.64996 9.42772 7.23796 9.92572L7.43596 10.0997C7.73596 10.3577 8.24596 10.3577 8.53996 10.0997L11.036 7.95772C11.678 7.41172 12.674 7.41172 13.316 7.95772L14.294 8.79772C14.48 8.95972 14.504 9.24172 14.342 9.43372C14.18 9.61972 13.898 9.64372 13.706 9.48172L12.728 8.64172C12.428 8.38372 11.918 8.38372 11.624 8.64172L9.12796 10.7837C8.49196 11.3297 7.48996 11.3297 6.84796 10.7837L6.64996 10.6097C6.37396 10.3757 5.91796 10.3517 5.61196 10.5617L2.65996 12.5477C2.57596 12.5957 2.48596 12.6197 2.40196 12.6197Z"
+                                                                        fill="white"></path>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">عنوان </label>
+                                                <input type="text" class="form-control" value="عنوان">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">توضیحات </label>
+                                                <textarea rows="7" class="form-control"
+                                                    placeholder="توضیحات"></textarea>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- steps -->
+                                <div class="mt-4">
+                                    <h5 class="font-bold mb-4">
+                                        بخش مراحل ثبت معدن
+                                    </h5>
+                                    <form class="row g-4">
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">عنوان </label>
+                                                <input type="text" class="form-control" value="عنوان">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">زیر عنوان</label>
+                                                <input type="text" class="form-control" value="عنوان">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <div class="d-flex gap-3 flex-wrap position-relative mt-2">
+                                                    <div
+                                                        class="d-flex justify-content-between w-100 position-relative border-dash rounded-3 align-items-center cursor text-secondary bg-gray px-4 py-2 gap-1">
+                                                        <input type="file"
+                                                            class="position-absolute end-0 start-0 bottom-0 top-0 z-10 w-100 opacity-none">
+                                                        <div>
+                                                            <span class="fw-normal fs-14 text-dark d-block mb-2">عکس
+                                                                شاخص</span>
+                                                            <span class="fs-7 text-muted">320*150 پیکسل - حداکثر حجم
+                                                                2مگابایت</span>
+                                                        </div>
+                                                        <div
+                                                            class="d-flex rounded-3 w-48 h-48 flex-column position-relative overflow-hidden align-items-center cursor text-secondary bg-gray gap-1 justify-content-center">
+                                                            <img alt="upload" src="assets/img/asetat.png"
+                                                                class="d-block w-100 h-100">
+                                                            <div
+                                                                class="position-absolute d-flex align-items-center justify-content-center gap-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                    height="24" viewBox="0 0 16 16" fill="none">
+                                                                    <path
+                                                                        d="M6.19993 7.24995C5.28793 7.24995 4.54993 6.51195 4.54993 5.59995C4.54993 4.68795 5.28793 3.94995 6.19993 3.94995C7.11193 3.94995 7.84993 4.68795 7.84993 5.59995C7.84993 6.51195 7.11193 7.24995 6.19993 7.24995ZM6.19993 4.84995C5.78593 4.84995 5.44993 5.18595 5.44993 5.59995C5.44993 6.01395 5.78593 6.34995 6.19993 6.34995C6.61393 6.34995 6.94993 6.01395 6.94993 5.59995C6.94993 5.18595 6.61393 4.84995 6.19993 4.84995Z"
+                                                                        fill="white"></path>
+                                                                    <path
+                                                                        d="M9.79993 14.4499H6.19993C2.94193 14.4499 1.54993 13.0579 1.54993 9.79993V6.19993C1.54993 2.94193 2.94193 1.54993 6.19993 1.54993H8.59993C8.84593 1.54993 9.04993 1.75393 9.04993 1.99993C9.04993 2.24593 8.84593 2.44993 8.59993 2.44993H6.19993C3.43393 2.44993 2.44993 3.43393 2.44993 6.19993V9.79993C2.44993 12.5659 3.43393 13.5499 6.19993 13.5499H9.79993C12.5659 13.5499 13.5499 12.5659 13.5499 9.79993V6.79993C13.5499 6.55393 13.7539 6.34993 13.9999 6.34993C14.2459 6.34993 14.4499 6.55393 14.4499 6.79993V9.79993C14.4499 13.0579 13.0579 14.4499 9.79993 14.4499Z"
+                                                                        fill="white"></path>
+                                                                    <path
+                                                                        d="M13.5499 4.24998H10.2499C10.0039 4.24998 9.79993 4.04598 9.79993 3.79998C9.79993 3.55398 10.0039 3.34998 10.2499 3.34998H13.5499C13.7959 3.34998 13.9999 3.55398 13.9999 3.79998C13.9999 4.04598 13.7959 4.24998 13.5499 4.24998Z"
+                                                                        fill="white"></path>
+                                                                    <path
+                                                                        d="M11.9 5.89995C11.654 5.89995 11.45 5.69595 11.45 5.44995V2.14995C11.45 1.90395 11.654 1.69995 11.9 1.69995C12.146 1.69995 12.35 1.90395 12.35 2.14995V5.44995C12.35 5.69595 12.146 5.89995 11.9 5.89995Z"
+                                                                        fill="white"></path>
+                                                                    <path
+                                                                        d="M2.40196 12.6197C2.25796 12.6197 2.11396 12.5477 2.02996 12.4217C1.89196 12.2177 1.94596 11.9357 2.14996 11.7977L5.10796 9.81172C5.75596 9.37972 6.64996 9.42772 7.23796 9.92572L7.43596 10.0997C7.73596 10.3577 8.24596 10.3577 8.53996 10.0997L11.036 7.95772C11.678 7.41172 12.674 7.41172 13.316 7.95772L14.294 8.79772C14.48 8.95972 14.504 9.24172 14.342 9.43372C14.18 9.61972 13.898 9.64372 13.706 9.48172L12.728 8.64172C12.428 8.38372 11.918 8.38372 11.624 8.64172L9.12796 10.7837C8.49196 11.3297 7.48996 11.3297 6.84796 10.7837L6.64996 10.6097C6.37396 10.3757 5.91796 10.3517 5.61196 10.5617L2.65996 12.5477C2.57596 12.5957 2.48596 12.6197 2.40196 12.6197Z"
+                                                                        fill="white"></path>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">توضیحات </label>
+                                                <textarea rows="7" class="form-control"
+                                                    placeholder="توضیحات"></textarea>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- estelam -->
+                                <div class="mt-4">
+                                    <h5 class="font-bold mb-4">
+                                        بخش استعلامات
+                                    </h5>
+                                    <form class="row g-4">
+                                        <div class="col-12">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">عنوان </label>
+                                                <input type="text" class="form-control" value="عنوان">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">توضیحات </label>
+                                                <textarea rows="7" class="form-control"
+                                                    placeholder="توضیحات"></textarea>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- steps -->
+                                <div class="mt-4">
+                                    <h5 class="font-bold mb-4">
+                                        بخش مراحل استعلامات چندگانه
+                                    </h5>
+                                    <form class="row g-4">
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">عنوان </label>
+                                                <input type="text" class="form-control" value="عنوان">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">زیر عنوان</label>
+                                                <input type="text" class="form-control" value="عنوان">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <div class="d-flex gap-3 flex-wrap position-relative mt-2">
+                                                    <div
+                                                        class="d-flex justify-content-between w-100 position-relative border-dash rounded-3 align-items-center cursor text-secondary bg-gray px-4 py-2 gap-1">
+                                                        <input type="file"
+                                                            class="position-absolute end-0 start-0 bottom-0 top-0 z-10 w-100 opacity-none">
+                                                        <div>
+                                                            <span class="fw-normal fs-14 text-dark d-block mb-2">عکس
+                                                                شاخص</span>
+                                                            <span class="fs-7 text-muted">320*150 پیکسل - حداکثر حجم
+                                                                2مگابایت</span>
+                                                        </div>
+                                                        <div
+                                                            class="d-flex rounded-3 w-48 h-48 flex-column position-relative overflow-hidden align-items-center cursor text-secondary bg-gray gap-1 justify-content-center">
+                                                            <img alt="upload" src="assets/img/asetat.png"
+                                                                class="d-block w-100 h-100">
+                                                            <div
+                                                                class="position-absolute d-flex align-items-center justify-content-center gap-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                    height="24" viewBox="0 0 16 16" fill="none">
+                                                                    <path
+                                                                        d="M6.19993 7.24995C5.28793 7.24995 4.54993 6.51195 4.54993 5.59995C4.54993 4.68795 5.28793 3.94995 6.19993 3.94995C7.11193 3.94995 7.84993 4.68795 7.84993 5.59995C7.84993 6.51195 7.11193 7.24995 6.19993 7.24995ZM6.19993 4.84995C5.78593 4.84995 5.44993 5.18595 5.44993 5.59995C5.44993 6.01395 5.78593 6.34995 6.19993 6.34995C6.61393 6.34995 6.94993 6.01395 6.94993 5.59995C6.94993 5.18595 6.61393 4.84995 6.19993 4.84995Z"
+                                                                        fill="white"></path>
+                                                                    <path
+                                                                        d="M9.79993 14.4499H6.19993C2.94193 14.4499 1.54993 13.0579 1.54993 9.79993V6.19993C1.54993 2.94193 2.94193 1.54993 6.19993 1.54993H8.59993C8.84593 1.54993 9.04993 1.75393 9.04993 1.99993C9.04993 2.24593 8.84593 2.44993 8.59993 2.44993H6.19993C3.43393 2.44993 2.44993 3.43393 2.44993 6.19993V9.79993C2.44993 12.5659 3.43393 13.5499 6.19993 13.5499H9.79993C12.5659 13.5499 13.5499 12.5659 13.5499 9.79993V6.79993C13.5499 6.55393 13.7539 6.34993 13.9999 6.34993C14.2459 6.34993 14.4499 6.55393 14.4499 6.79993V9.79993C14.4499 13.0579 13.0579 14.4499 9.79993 14.4499Z"
+                                                                        fill="white"></path>
+                                                                    <path
+                                                                        d="M13.5499 4.24998H10.2499C10.0039 4.24998 9.79993 4.04598 9.79993 3.79998C9.79993 3.55398 10.0039 3.34998 10.2499 3.34998H13.5499C13.7959 3.34998 13.9999 3.55398 13.9999 3.79998C13.9999 4.04598 13.7959 4.24998 13.5499 4.24998Z"
+                                                                        fill="white"></path>
+                                                                    <path
+                                                                        d="M11.9 5.89995C11.654 5.89995 11.45 5.69595 11.45 5.44995V2.14995C11.45 1.90395 11.654 1.69995 11.9 1.69995C12.146 1.69995 12.35 1.90395 12.35 2.14995V5.44995C12.35 5.69595 12.146 5.89995 11.9 5.89995Z"
+                                                                        fill="white"></path>
+                                                                    <path
+                                                                        d="M2.40196 12.6197C2.25796 12.6197 2.11396 12.5477 2.02996 12.4217C1.89196 12.2177 1.94596 11.9357 2.14996 11.7977L5.10796 9.81172C5.75596 9.37972 6.64996 9.42772 7.23796 9.92572L7.43596 10.0997C7.73596 10.3577 8.24596 10.3577 8.53996 10.0997L11.036 7.95772C11.678 7.41172 12.674 7.41172 13.316 7.95772L14.294 8.79772C14.48 8.95972 14.504 9.24172 14.342 9.43372C14.18 9.61972 13.898 9.64372 13.706 9.48172L12.728 8.64172C12.428 8.38372 11.918 8.38372 11.624 8.64172L9.12796 10.7837C8.49196 11.3297 7.48996 11.3297 6.84796 10.7837L6.64996 10.6097C6.37396 10.3757 5.91796 10.3517 5.61196 10.5617L2.65996 12.5477C2.57596 12.5957 2.48596 12.6197 2.40196 12.6197Z"
+                                                                        fill="white"></path>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">توضیحات </label>
+                                                <textarea rows="7" class="form-control"
+                                                    placeholder="توضیحات"></textarea>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- description -->
+                                <div class="mt-4">
+                                    <h5 class="font-bold mb-4">
+                                        بخش معرفی
+                                    </h5>
+                                    <form class="row g-4">
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">عنوان </label>
+                                                <input type="text" class="form-control" value="عنوان">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">توضیحات </label>
+                                                <textarea rows="7" class="form-control"
+                                                    placeholder="توضیحات"></textarea>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                              </div>
+                            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel"
+                                aria-labelledby="contact-tab" tabindex="0">
+                                   <!-- banner -->
+                                   <div>
+                                    <h5 class="font-bold mb-4">
+                                        بخش بنر
+                                    </h5>
+                                    <form class="row g-4">
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">عنوان </label>
+                                                <input type="text" class="form-control" value="عنوان">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">زیر عنوان </label>
+                                                <input type="text" class="form-control" value="زیر عنوان">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">توضیحات </label>
+                                                <textarea rows="7" class="form-control"
+                                                    placeholder="توضیحات"></textarea>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                               <!-- description -->
+                               <div class="mt-4">
+                                <h5 class="font-bold mb-4">
+                                    بخش معرفی
+                                </h5>
+                                <form class="row g-4">
+                                    <div class="col-lg-6">
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">عنوان </label>
+                                            <input type="text" class="form-control" value="عنوان">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">توضیحات </label>
+                                            <textarea rows="7" class="form-control"
+                                                placeholder="توضیحات"></textarea>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            </div>
+                            <div class="tab-pane fade" id="legal-tab-pane" role="tabpanel" aria-labelledby="legal-tab"
+                                tabindex="0">
+                                   <!-- banner -->
+                                   <div>
+                                    <h5 class="font-bold mb-4">
+                                        بخش بنر
+                                    </h5>
+                                    <form class="row g-4">
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <div class="d-flex gap-3 flex-wrap position-relative mt-2">
+                                                    <div
+                                                        class="d-flex justify-content-between w-100 position-relative border-dash rounded-3 align-items-center cursor text-secondary bg-gray px-4 py-2 gap-1">
+                                                        <input type="file"
+                                                            class="position-absolute end-0 start-0 bottom-0 top-0 z-10 w-100 opacity-none">
+                                                        <div>
+                                                            <span class="fw-normal fs-14 text-dark d-block mb-2">عکس
+                                                                شاخص</span>
+                                                            <span class="fs-7 text-muted">320*150 پیکسل - حداکثر حجم
+                                                                2مگابایت</span>
+                                                        </div>
+                                                        <div
+                                                            class="d-flex rounded-3 w-48 h-48 flex-column position-relative overflow-hidden align-items-center cursor text-secondary bg-gray gap-1 justify-content-center">
+                                                            <img alt="upload" src="assets/img/asetat.png"
+                                                                class="d-block w-100 h-100">
+                                                            <div
+                                                                class="position-absolute d-flex align-items-center justify-content-center gap-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                    height="24" viewBox="0 0 16 16" fill="none">
+                                                                    <path
+                                                                        d="M6.19993 7.24995C5.28793 7.24995 4.54993 6.51195 4.54993 5.59995C4.54993 4.68795 5.28793 3.94995 6.19993 3.94995C7.11193 3.94995 7.84993 4.68795 7.84993 5.59995C7.84993 6.51195 7.11193 7.24995 6.19993 7.24995ZM6.19993 4.84995C5.78593 4.84995 5.44993 5.18595 5.44993 5.59995C5.44993 6.01395 5.78593 6.34995 6.19993 6.34995C6.61393 6.34995 6.94993 6.01395 6.94993 5.59995C6.94993 5.18595 6.61393 4.84995 6.19993 4.84995Z"
+                                                                        fill="white"></path>
+                                                                    <path
+                                                                        d="M9.79993 14.4499H6.19993C2.94193 14.4499 1.54993 13.0579 1.54993 9.79993V6.19993C1.54993 2.94193 2.94193 1.54993 6.19993 1.54993H8.59993C8.84593 1.54993 9.04993 1.75393 9.04993 1.99993C9.04993 2.24593 8.84593 2.44993 8.59993 2.44993H6.19993C3.43393 2.44993 2.44993 3.43393 2.44993 6.19993V9.79993C2.44993 12.5659 3.43393 13.5499 6.19993 13.5499H9.79993C12.5659 13.5499 13.5499 12.5659 13.5499 9.79993V6.79993C13.5499 6.55393 13.7539 6.34993 13.9999 6.34993C14.2459 6.34993 14.4499 6.55393 14.4499 6.79993V9.79993C14.4499 13.0579 13.0579 14.4499 9.79993 14.4499Z"
+                                                                        fill="white"></path>
+                                                                    <path
+                                                                        d="M13.5499 4.24998H10.2499C10.0039 4.24998 9.79993 4.04598 9.79993 3.79998C9.79993 3.55398 10.0039 3.34998 10.2499 3.34998H13.5499C13.7959 3.34998 13.9999 3.55398 13.9999 3.79998C13.9999 4.04598 13.7959 4.24998 13.5499 4.24998Z"
+                                                                        fill="white"></path>
+                                                                    <path
+                                                                        d="M11.9 5.89995C11.654 5.89995 11.45 5.69595 11.45 5.44995V2.14995C11.45 1.90395 11.654 1.69995 11.9 1.69995C12.146 1.69995 12.35 1.90395 12.35 2.14995V5.44995C12.35 5.69595 12.146 5.89995 11.9 5.89995Z"
+                                                                        fill="white"></path>
+                                                                    <path
+                                                                        d="M2.40196 12.6197C2.25796 12.6197 2.11396 12.5477 2.02996 12.4217C1.89196 12.2177 1.94596 11.9357 2.14996 11.7977L5.10796 9.81172C5.75596 9.37972 6.64996 9.42772 7.23796 9.92572L7.43596 10.0997C7.73596 10.3577 8.24596 10.3577 8.53996 10.0997L11.036 7.95772C11.678 7.41172 12.674 7.41172 13.316 7.95772L14.294 8.79772C14.48 8.95972 14.504 9.24172 14.342 9.43372C14.18 9.61972 13.898 9.64372 13.706 9.48172L12.728 8.64172C12.428 8.38372 11.918 8.38372 11.624 8.64172L9.12796 10.7837C8.49196 11.3297 7.48996 11.3297 6.84796 10.7837L6.64996 10.6097C6.37396 10.3757 5.91796 10.3517 5.61196 10.5617L2.65996 12.5477C2.57596 12.5957 2.48596 12.6197 2.40196 12.6197Z"
+                                                                        fill="white"></path>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">عنوان </label>
+                                                <input type="text" class="form-control" value="عنوان">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">زیر عنوان </label>
+                                                <input type="text" class="form-control" value="زیر عنوان">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">توضیحات </label>
+                                                <textarea rows="7" class="form-control"
+                                                    placeholder="توضیحات"></textarea>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- benefits -->
+                                <div class="mt-4">
+                                    <h5 class="font-bold mb-4">
+                                        بخش مزایا
+                                    </h5>
+                                    <form class="row g-4">
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">عنوان </label>
+                                                <input type="text" class="form-control" value="عنوان">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">اسکرول خوردن بعد از خط</label>
+                                                <input type="text" class="form-control" value="2">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <div class="d-flex gap-3 flex-wrap position-relative mt-2">
+                                                    <div
+                                                        class="d-flex justify-content-between w-100 position-relative border-dash rounded-3 align-items-center cursor text-secondary bg-gray px-4 py-2 gap-1">
+                                                        <input type="file"
+                                                            class="position-absolute end-0 start-0 bottom-0 top-0 z-10 w-100 opacity-none">
+                                                        <div>
+                                                            <span class="fw-normal fs-14 text-dark d-block mb-2">عکس
+                                                                آیکون</span>
+                                                            <span class="fs-7 text-muted">320*150 پیکسل - حداکثر حجم
+                                                                2مگابایت</span>
+                                                        </div>
+                                                        <div
+                                                            class="d-flex rounded-3 w-48 h-48 flex-column position-relative overflow-hidden align-items-center cursor text-secondary bg-gray gap-1 justify-content-center">
+                                                            <img alt="upload" src="assets/img/asetat.png"
+                                                                class="d-block w-100 h-100">
+                                                            <div
+                                                                class="position-absolute d-flex align-items-center justify-content-center gap-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                    height="24" viewBox="0 0 16 16" fill="none">
+                                                                    <path
+                                                                        d="M6.19993 7.24995C5.28793 7.24995 4.54993 6.51195 4.54993 5.59995C4.54993 4.68795 5.28793 3.94995 6.19993 3.94995C7.11193 3.94995 7.84993 4.68795 7.84993 5.59995C7.84993 6.51195 7.11193 7.24995 6.19993 7.24995ZM6.19993 4.84995C5.78593 4.84995 5.44993 5.18595 5.44993 5.59995C5.44993 6.01395 5.78593 6.34995 6.19993 6.34995C6.61393 6.34995 6.94993 6.01395 6.94993 5.59995C6.94993 5.18595 6.61393 4.84995 6.19993 4.84995Z"
+                                                                        fill="white"></path>
+                                                                    <path
+                                                                        d="M9.79993 14.4499H6.19993C2.94193 14.4499 1.54993 13.0579 1.54993 9.79993V6.19993C1.54993 2.94193 2.94193 1.54993 6.19993 1.54993H8.59993C8.84593 1.54993 9.04993 1.75393 9.04993 1.99993C9.04993 2.24593 8.84593 2.44993 8.59993 2.44993H6.19993C3.43393 2.44993 2.44993 3.43393 2.44993 6.19993V9.79993C2.44993 12.5659 3.43393 13.5499 6.19993 13.5499H9.79993C12.5659 13.5499 13.5499 12.5659 13.5499 9.79993V6.79993C13.5499 6.55393 13.7539 6.34993 13.9999 6.34993C14.2459 6.34993 14.4499 6.55393 14.4499 6.79993V9.79993C14.4499 13.0579 13.0579 14.4499 9.79993 14.4499Z"
+                                                                        fill="white"></path>
+                                                                    <path
+                                                                        d="M13.5499 4.24998H10.2499C10.0039 4.24998 9.79993 4.04598 9.79993 3.79998C9.79993 3.55398 10.0039 3.34998 10.2499 3.34998H13.5499C13.7959 3.34998 13.9999 3.55398 13.9999 3.79998C13.9999 4.04598 13.7959 4.24998 13.5499 4.24998Z"
+                                                                        fill="white"></path>
+                                                                    <path
+                                                                        d="M11.9 5.89995C11.654 5.89995 11.45 5.69595 11.45 5.44995V2.14995C11.45 1.90395 11.654 1.69995 11.9 1.69995C12.146 1.69995 12.35 1.90395 12.35 2.14995V5.44995C12.35 5.69595 12.146 5.89995 11.9 5.89995Z"
+                                                                        fill="white"></path>
+                                                                    <path
+                                                                        d="M2.40196 12.6197C2.25796 12.6197 2.11396 12.5477 2.02996 12.4217C1.89196 12.2177 1.94596 11.9357 2.14996 11.7977L5.10796 9.81172C5.75596 9.37972 6.64996 9.42772 7.23796 9.92572L7.43596 10.0997C7.73596 10.3577 8.24596 10.3577 8.53996 10.0997L11.036 7.95772C11.678 7.41172 12.674 7.41172 13.316 7.95772L14.294 8.79772C14.48 8.95972 14.504 9.24172 14.342 9.43372C14.18 9.61972 13.898 9.64372 13.706 9.48172L12.728 8.64172C12.428 8.38372 11.918 8.38372 11.624 8.64172L9.12796 10.7837C8.49196 11.3297 7.48996 11.3297 6.84796 10.7837L6.64996 10.6097C6.37396 10.3757 5.91796 10.3517 5.61196 10.5617L2.65996 12.5477C2.57596 12.5957 2.48596 12.6197 2.40196 12.6197Z"
+                                                                        fill="white"></path>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">توضیحات </label>
+                                                <textarea rows="7" class="form-control"
+                                                    placeholder="توضیحات"></textarea>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- description -->
+                                <div class="mt-4">
+                                    <h5 class="font-bold mb-4">
+                                        بخش معرفی
+                                    </h5>
+                                    <form class="row g-4">
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">عنوان </label>
+                                                <input type="text" class="form-control" value="عنوان">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">توضیحات </label>
+                                                <textarea rows="7" class="form-control"
+                                                    placeholder="توضیحات"></textarea>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="product-tab-pane" role="tabpanel"
+                                aria-labelledby="product-tab" tabindex="0">
+                                   <!-- banner -->
+                                   <div>
+                                    <h5 class="font-bold mb-4">
+                                        بخش بنر
+                                    </h5>
+                                    <form class="row g-4">
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <div class="d-flex gap-3 flex-wrap position-relative mt-2">
+                                                    <div
+                                                        class="d-flex justify-content-between w-100 position-relative border-dash rounded-3 align-items-center cursor text-secondary bg-gray px-4 py-2 gap-1">
+                                                        <input type="file"
+                                                            class="position-absolute end-0 start-0 bottom-0 top-0 z-10 w-100 opacity-none">
+                                                        <div>
+                                                            <span class="fw-normal fs-14 text-dark d-block mb-2">عکس
+                                                                شاخص</span>
+                                                            <span class="fs-7 text-muted">320*150 پیکسل - حداکثر حجم
+                                                                2مگابایت</span>
+                                                        </div>
+                                                        <div
+                                                            class="d-flex rounded-3 w-48 h-48 flex-column position-relative overflow-hidden align-items-center cursor text-secondary bg-gray gap-1 justify-content-center">
+                                                            <img alt="upload" src="assets/img/asetat.png"
+                                                                class="d-block w-100 h-100">
+                                                            <div
+                                                                class="position-absolute d-flex align-items-center justify-content-center gap-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                    height="24" viewBox="0 0 16 16" fill="none">
+                                                                    <path
+                                                                        d="M6.19993 7.24995C5.28793 7.24995 4.54993 6.51195 4.54993 5.59995C4.54993 4.68795 5.28793 3.94995 6.19993 3.94995C7.11193 3.94995 7.84993 4.68795 7.84993 5.59995C7.84993 6.51195 7.11193 7.24995 6.19993 7.24995ZM6.19993 4.84995C5.78593 4.84995 5.44993 5.18595 5.44993 5.59995C5.44993 6.01395 5.78593 6.34995 6.19993 6.34995C6.61393 6.34995 6.94993 6.01395 6.94993 5.59995C6.94993 5.18595 6.61393 4.84995 6.19993 4.84995Z"
+                                                                        fill="white"></path>
+                                                                    <path
+                                                                        d="M9.79993 14.4499H6.19993C2.94193 14.4499 1.54993 13.0579 1.54993 9.79993V6.19993C1.54993 2.94193 2.94193 1.54993 6.19993 1.54993H8.59993C8.84593 1.54993 9.04993 1.75393 9.04993 1.99993C9.04993 2.24593 8.84593 2.44993 8.59993 2.44993H6.19993C3.43393 2.44993 2.44993 3.43393 2.44993 6.19993V9.79993C2.44993 12.5659 3.43393 13.5499 6.19993 13.5499H9.79993C12.5659 13.5499 13.5499 12.5659 13.5499 9.79993V6.79993C13.5499 6.55393 13.7539 6.34993 13.9999 6.34993C14.2459 6.34993 14.4499 6.55393 14.4499 6.79993V9.79993C14.4499 13.0579 13.0579 14.4499 9.79993 14.4499Z"
+                                                                        fill="white"></path>
+                                                                    <path
+                                                                        d="M13.5499 4.24998H10.2499C10.0039 4.24998 9.79993 4.04598 9.79993 3.79998C9.79993 3.55398 10.0039 3.34998 10.2499 3.34998H13.5499C13.7959 3.34998 13.9999 3.55398 13.9999 3.79998C13.9999 4.04598 13.7959 4.24998 13.5499 4.24998Z"
+                                                                        fill="white"></path>
+                                                                    <path
+                                                                        d="M11.9 5.89995C11.654 5.89995 11.45 5.69595 11.45 5.44995V2.14995C11.45 1.90395 11.654 1.69995 11.9 1.69995C12.146 1.69995 12.35 1.90395 12.35 2.14995V5.44995C12.35 5.69595 12.146 5.89995 11.9 5.89995Z"
+                                                                        fill="white"></path>
+                                                                    <path
+                                                                        d="M2.40196 12.6197C2.25796 12.6197 2.11396 12.5477 2.02996 12.4217C1.89196 12.2177 1.94596 11.9357 2.14996 11.7977L5.10796 9.81172C5.75596 9.37972 6.64996 9.42772 7.23796 9.92572L7.43596 10.0997C7.73596 10.3577 8.24596 10.3577 8.53996 10.0997L11.036 7.95772C11.678 7.41172 12.674 7.41172 13.316 7.95772L14.294 8.79772C14.48 8.95972 14.504 9.24172 14.342 9.43372C14.18 9.61972 13.898 9.64372 13.706 9.48172L12.728 8.64172C12.428 8.38372 11.918 8.38372 11.624 8.64172L9.12796 10.7837C8.49196 11.3297 7.48996 11.3297 6.84796 10.7837L6.64996 10.6097C6.37396 10.3757 5.91796 10.3517 5.61196 10.5617L2.65996 12.5477C2.57596 12.5957 2.48596 12.6197 2.40196 12.6197Z"
+                                                                        fill="white"></path>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">عنوان </label>
+                                                <input type="text" class="form-control" value="عنوان">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">زیر عنوان </label>
+                                                <input type="text" class="form-control" value="زیر عنوان">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">توضیحات </label>
+                                                <textarea rows="7" class="form-control"
+                                                    placeholder="توضیحات"></textarea>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- description -->
+                                <div class="mt-4">
+                                    <h5 class="font-bold mb-4">
+                                        بخش معرفی
+                                    </h5>
+                                    <form class="row g-4">
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">عنوان </label>
+                                                <input type="text" class="form-control" value="عنوان">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">توضیحات </label>
+                                                <textarea rows="7" class="form-control"
+                                                    placeholder="توضیحات"></textarea>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="faq-tab-pane" role="tabpanel" aria-labelledby="faq-tab"
+                                tabindex="0">
+                                     <!-- category -->
+                                <div class="mt-4">
+                                    <h5 class="font-bold mb-4">
+                                        سوالات متداول
+                                    </h5>
+                                    <form class="row g-4">
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                              <label for="exampleInputEmail1" class="form-label">دسته بندی</label>
+                                              <select class="form-select">
+                                                <option>شناسایی و اکتشافات</option>
+                                                <option>شناسایی و اکتشافات</option>
+                                                <option>شناسایی و اکتشافات</option>
+                                              </select>
+                                            </div>
+                                          </div>
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">سوال </label>
+                                                <input type="text" class="form-control" value="">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">پاسخ </label>
+                                                <textarea rows="7" class="form-control"
+                                                    placeholder=""></textarea>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </main>
+        </div>
+    </section>
+
+
+    <script type="text/javascript" src="assets/js/jalalidatepicker.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/jquery.dataTables.min.js"></script>
+
+</body>
+
+</html>

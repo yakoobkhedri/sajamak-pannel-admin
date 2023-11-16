@@ -326,6 +326,9 @@ table img{
   .dataTables_wrapper .dataTables_filter {
     margin-bottom: 34px;
   }
+  .select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover{
+    color: red!important;
+  }
 
 /* responsive */
 @media only screen and (max-width:1400px) {}

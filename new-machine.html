@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="assets/css/jquery.uploader.css">
   <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
   <title>افزودن تجهیزات و ماشین آلات</title>
 </head>
 <style>
@@ -250,9 +251,18 @@
                       <label for="exampleInputEmail1" class="form-label">نوع تجهیزات و ماشین
                         آلات</label>
                       <select class="form-select">
-                        <option>ماشین آلات عمرانی و حفاری</option>
-                        <option>ماشین آلات عمرانی و حفاری</option>
-                        <option>ماشین آلات عمرانی و حفاری</option>
+                        <option>گریدر</option>
+                        <option>غلتک</option>
+                        <option>بیل</option>
+                        <option>لودر</option>
+                        <option>کامیون</option>
+                        <option>بولدوزر</option>
+                        <option>پیکور</option>
+                        <option>چکش</option>
+                        <option>کمپرسور</option>
+                        <option>شاول</option>
+                        <option>تراک</option>
+                        <option>ماشین حفاری</option>
                       </select>
                     </div>
                   </div>
@@ -285,8 +295,9 @@
                       <label for="exampleInputEmail1" class="form-label">شاخص قیمت</label>
                       <select class="form-select">
                         <option>متر مربع</option>
-                        <option>متر مربع</option>
-                        <option>متر مربع</option>
+                        <option>متر مکعب</option>
+                        <option>تن</option>
+                        <option>کیلومتر</option>
                       </select>
                     </div>
                   </div>
@@ -299,10 +310,10 @@
                   <div class="col-lg-6">
                     <div class="mb-3">
                       <label for="exampleInputEmail1" class="form-label">شهر(های) تحت پوشش</label>
-                      <select class="form-select">
-                        <option>کرمان-رفسنجان-بم</option>
-                        <option>کرمان-جیرفت-بم</option>
-                        <option>کرمان-سیرجان-بم</option>
+                      <select class="js-example-basic-multiple form-select" name="states[]" multiple="multiple">
+                        <option>کرمان</option>
+                        <option>بم</option>
+                        <option>سیرجان</option>
                       </select>
                     </div>
                   </div>
@@ -356,9 +367,10 @@
   </section>
 
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
   <script src="assets/js/scripts.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="assets/js/jquery.uploader.min2.js"></script>
   <script type="application/javascript">
     let ajaxConfig = {

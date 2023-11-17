@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link rel='stylesheet' type='text/css' media='screen' href='assets/css/styles.css'>
+  <link type="text/css" rel="stylesheet" href="assets/css/jalalidatepicker.min.css" />
+  <title>ویرایش قرارداد</title>
+</head>
+
+<body>
+
+  <section class="d-flex mx-0">
+    <div class="px-0 sidebar transition h-100vh">
+      <div class="py-4 px-3">
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="d-flex align-items-center gap-3">
+            <img alt="" src="assets/img/Vector.png" class="cursor">
+            <img alt="bell-alert" src="assets/img/bell-alert.svg" class="cursor transition">
+            <img alt="cog" src="assets/img/cog.svg" class="cursor transition">
+          </div>
+          <img alt="" src="assets/img/chevron-double-right.svg" class="cursor transition" id="toggle-sidebar">
+        </div>
+        <div
+          class="avatar d-flex align-items-center justify-content-center rounded-circle mx-auto mt-5 position-relative">
+          <div>
+            <img src="assets/img/69.png">
+            <div>
+              <input type="file" class="position-absolute top-0 end-0 start-0 bottom-0 w-100 z-10 cursor opacity-none">
+              <img alt="add-circle" src="assets/img/add-circle.svg" class="position-absolute -bottom-4 start-0 cursor">
+            </div>
+          </div>
+        </div>
+        <div class="text-center text-white mt-4 avatar-name transition">
+          <h6 class="font-bold">صابر علی نژاد</h6>
+          <p class="text-white-50">مدیر عامل</p>
+        </div>
+      </div>
+      <ul class="m-0 px-0 fw-bold">
+
+        <li class="px-3 transition">
+          <a href="requests.html" class="d-flex align-items-center justify-content-between text-white">
+            <div class="d-flex align-items-center gap-3">
+              <img alt="menu" src="assets/img/document-text.svg">
+              <p class="mb-0">درخواست ها</p>
+            </div>
+            <img alt="arrow" src="assets/img/arrow-left.png">
+          </a>
+        </li>
+        <li class="px-3 transition">
+          <a href="projects.html" class="d-flex align-items-center justify-content-between text-white">
+            <div class="d-flex align-items-center gap-3">
+              <img alt="menu" src="assets/img/document-text.svg">
+              <p class="mb-0">پروژه ها</p>
+            </div>
+            <img alt="arrow" src="assets/img/arrow-left.png">
+          </a>
+        </li>
+        <li class="px-3 transition">
+          <a href="contractors.html" class="d-flex align-items-center justify-content-between text-white">
+            <div class="d-flex align-items-center gap-3">
+              <img alt="menu" src="assets/img/contractor-icon.svg">
+              <p class="mb-0">پیمانکاران</p>
+            </div>
+            <img alt="arrow" src="assets/img/arrow-left.png">
+          </a>
+        </li>
+        <li class="px-3 transition">
+          <a href="products.html" class="d-flex align-items-center justify-content-between text-white">
+            <div class="d-flex align-items-center gap-3">
+              <img alt="menu" src="assets/img/product-icon.svg">
+              <p class="mb-0">مواد و محصولات</p>
+            </div>
+            <img alt="arrow" src="assets/img/arrow-left.png">
+          </a>
+        </li>
+        <li class="px-3 transition">
+          <a href="machines.html" class="d-flex align-items-center justify-content-between text-white">
+            <div class="d-flex align-items-center gap-3">
+              <img alt="menu" src="assets/img/truck.svg">
+              <p class="mb-0">تجهیزات</p>
+            </div>
+            <img alt="arrow" src="assets/img/arrow-left.png">
+          </a>
+        </li>
+        <li class="px-3 transition">
+          <a href="mines.html" class="d-flex align-items-center justify-content-between text-white">
+            <div class="d-flex align-items-center gap-3">
+              <img alt="menu" src="assets/img/mine-icon.svg">
+              <p class="mb-0">معادن</p>
+            </div>
+            <img alt="arrow" src="assets/img/arrow-left.png">
+          </a>
+        </li>
+        <li class="px-3 transition active">
+          <a href="contracts.html" class="d-flex align-items-center justify-content-between text-white">
+            <div class="d-flex align-items-center gap-3">
+              <img alt="menu" src="assets/img/wallet.svg">
+              <p class="mb-0">قراردادها</p>
+            </div>
+            <img alt="arrow" src="assets/img/arrow-left.png">
+          </a>
+        </li>
+        <li class="px-3 transition">
+          <a href="content.html" class="d-flex align-items-center justify-content-between text-white">
+            <div class="d-flex align-items-center gap-3">
+              <img alt="menu" src="assets/img/document-text.svg">
+              <p class="mb-0">محتوا</p>
+            </div>
+            <img alt="arrow" src="assets/img/arrow-left.png">
+          </a>
+        </li>
+        <li class="px-3 transition">
+          <a href="profile.html" class="d-flex align-items-center justify-content-between text-white">
+            <div class="d-flex align-items-center gap-3">
+              <img alt="menu" src="assets/img/user.svg">
+              <p class="mb-0">مدیریت</p>
+            </div>
+            <img alt="arrow" src="assets/img/arrow-left.png">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="p-3 col-10 bg-gray flex-grow-1 h-100vh overflow-auto">
+      <div id="overlay"></div>
+      <!-- header -->
+      <header class="d-flex align-items-lg-center gap-4 flex-column flex-lg-row justify-content-lg-between">
+        <div class="d-flex flex-column flex-md-row align-items-center gap-3">
+          <div class="d-flex align-items-center gap-3 justify-content-between w-100">
+            <svg id="openSidebar" xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="currentColor"
+              class="bi bi-list d-lg-none cursor" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+            <a>
+              <img alt="logo" src="assets/img/Frame 9249.png">
+            </a>
+          </div>
+          <div class="bg-white rounded-12 w-390 py-1 px-2 border d-flex align-items-center justify-content-between">
+            <input placeholder="جستجو" class="border-0 outline-none flex-grow-1">
+            <img alt="search" src="assets/img/Vector.svg">
+          </div>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <div class="language position-relative cursor">
+            <div class="d-flex align-items-center gap-2 dropdown-toggle" href="#" role="button"
+              data-bs-toggle="dropdown">
+              <img alt="language" src="assets/img/artwork.png">
+              <p class="mb-0 fw-bold fs-7 text-secondary">فارسی</p>
+            </div>
+            <ul class="dropdown-menu p-0 m-0 font-bold bg-white shadow-sm rounded-4">
+              <li class="d-flex align-items-center justify-content-center py-3 gap-3 border-bottom">
+                <img alt="language" src="assets/img/artwork.png">
+                <p class="mb-0 fw-bold fs-7 text-secondary">فارسی</p>
+              </li>
+
+            </ul>
+          </div>
+          <span class="divider"></span>
+          <div class="exit d-flex align-items-center gap-2 cursor">
+            <img alt="language" src="assets/img/exit.svg">
+            <p class="mb-0 fw-bold fs-7 text-secondary">خروج از حساب </p>
+          </div>
+        </div>
+      </header>
+      <!-- main -->
+      <main>
+        <!-- breadcrumb -->
+        <nav aria-label="breadcrumb" class="mt-4">
+          <ol class="breadcrumb fs-7 font-bold">
+            <li class="breadcrumb-item"><a class="text-dark" href="contracts.html">قراردادها</a></li>
+            <li class="breadcrumb-item"><a class="text-dark" href="contract-doc.html">قرارداد 2365</a></li>
+            <li class="breadcrumb-item active" aria-current="page">ویرایش قرارداد</li>
+          </ol>
+        </nav>
+        <!-- table -->
+        <div class="bg-white rounded-4 pb-3">
+          <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between p-3 border-bottom">
+            <a href="new-contracts .html" class="d-flex align-items-center gap-2 font-bold mb-0 text-dark">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M4.5 12L19.5 12M19.5 12L12.75 5.25M19.5 12L12.75 18.75" stroke="#0F172A" stroke-width="1.5"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              ویرایش قرارداد - 2365
+            </a>
+          </div>
+          <div class="p-4 px-5">
+            <div class="py-3">
+              <h5 class="font-bold mb-4">طرف اول:</h5>
+              <div>
+                <ul class="nav nav-tabs border-bottom-0 p-0" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <label class="fs-14 pe-0 text-secondary font-bold cursor nav-link active" id="mine-tab"
+                      data-bs-toggle="tab" data-bs-target="#mine-tab-pane" type="button" role="tab"
+                      aria-controls="mine-tab-pane" aria-selected="false">
+                      <input type="radio" name="role" class="form-check-input cursor ms-2" checked>
+                      شخص حقوقی
+                    </label>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <label class="fs-14 text-secondary font-bold cursor nav-link" id="contractor-tab"
+                      data-bs-toggle="tab" data-bs-target="#contractor-tab-pane" type="button" role="tab"
+                      aria-controls="contractor-tab-pane" aria-selected="true">
+                      <input type="radio" name="role" class="form-check-input cursor ms-2">
+                      شخص حقیقی
+                    </label>
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                  <form class="mt-4 font-bold mb-4 tab-pane fade" id="mine-tab-pane" role="tabpanel"
+                    aria-labelledby="mine-tab" tabindex="0">
+                    <div class="d-flex flex-column flex-md-row gap-4 px-0 mb-3">
+                      <div class="px-0 flex-grow-1">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">نام شرکت</label>
+                          <input value="شرکت مس رفسنجان" class="form-control">
+                        </div>
+                      </div>
+                      <div class="px-0 flex-grow-1">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">شماره ثبت نام مدیرعامل</label>
+                          <input value="23765" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row gap-4 px-0 mb-3">
+                      <div class="px-0 flex-grow-1">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">شماره اقتصادی</label>
+                          <input value="48742" class="form-control">
+                        </div>
+                      </div>
+                      <div class="px-0 flex-grow-1">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">شماره تلفن</label>
+                          <input value="2952349876" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row gap-4 px-0 mb-3">
+                      <div class="px-0 flex-grow-1">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">کدپستی</label>
+                          <input value="45698754" class="form-control">
+                        </div>
+                      </div>
+                      <div class="px-0 flex-grow-1">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">متن قرارداد</label>
+                          <textarea rows="5"
+                          class="form-control">متن قرارداد</textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 px-0">
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">آدرس</label>
+                        <textarea rows="5"
+                          class="form-control">شهر رفسنجان، میدان امیرکبیر، بلوار عدالت ، خیابان بنفشه کوچه 12 ، پلاک 18 </textarea>
+                      </div>
+                    </div>
+                    <input type="submit" value="ثبت" class="btn text-white font-bold py-2 w-100 bg-info">
+                  </form>
+                  <form class="mt-4 font-bold mb-4 tab-pane fade active show" id="contractor-tab-pane" role="tabpanel"
+                    aria-labelledby="contractor-tab" tabindex="0">
+                    <div class="d-flex flex-column flex-md-row gap-4 px-0 mb-3">
+                      <div class="px-0 flex-grow-1">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">عنوان</label>
+                          <input value="قرارداد 2365" class="form-control">
+                        </div>
+                      </div>
+                      <div class="px-0 flex-grow-1">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">شماره قرارداد</label>
+                          <input value="2365" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row gap-4 px-0 mb-3">
+                      <div class="px-0 flex-grow-1">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">نام و نام خانوادگی</label>
+                          <input value="صابر علی نژاد" class="form-control">
+                        </div>
+                      </div>
+                      <div class="px-0 flex-grow-1">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">شماره ملی</label>
+                          <input value="2952349876" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row gap-4 px-0 mb-3">
+                      <div class="px-0 flex-grow-1">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">کدپستی</label>
+                          <input value="45698754" class="form-control">
+                        </div>
+                      </div>
+                      <div class="px-0 flex-grow-1">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">شماره تماس</label>
+                          <input value="09126579876" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 px-0 mb-3">
+                      <div>
+                        <label for="exampleInputEmail1" class="form-label">تاریخ</label>
+                        <input type="text" class="date rounded-3 form-control" data-jdp="">
+                      </div>
+                    </div>
+                    <div class="col-12 px-0">
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">آدرس</label>
+                        <textarea rows="5"
+                          class="form-control">شهر رفسنجان، میدان امیرکبیر، بلوار عدالت ، خیابان بنفشه کوچه 12 ، پلاک 18 </textarea>
+                      </div>
+                    </div>
+                    <input type="submit" value="ثبت" class="btn text-white font-bold py-2 w-100 bg-info">
+                  </form>
+                </div>
+              </div>
+              <!--  -->
+              <h5 class="font-bold mb-4 mt-5">طرف دوم:</h5>
+              <div>
+                <ul class="nav nav-tabs border-bottom-0 p-0" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <label class="fs-14 pe-0 text-secondary font-bold cursor nav-link active" id="mine-tab"
+                      data-bs-toggle="tab" data-bs-target="#mine-tab-pane2" type="button" role="tab"
+                      aria-controls="mine-tab-pane" aria-selected="false">
+                      <input type="radio" name="role" class="form-check-input cursor ms-2" checked>
+                      شخص حقوقی
+                    </label>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <label class="fs-14 text-secondary font-bold cursor nav-link" id="contractor-tab"
+                      data-bs-toggle="tab" data-bs-target="#contractor-tab-pane2" type="button" role="tab"
+                      aria-controls="contractor-tab-pane" aria-selected="true">
+                      <input type="radio" name="role" class="form-check-input cursor ms-2">
+                      شخص حقیقی
+                    </label>
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                  <form class="mt-4 font-bold mb-4 tab-pane fade" id="mine-tab-pane2" role="tabpanel"
+                    aria-labelledby="mine-tab" tabindex="0">
+                    <div class="d-flex flex-column flex-md-row gap-4 px-0 mb-3">
+                      <div class="px-0 flex-grow-1">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">نام شرکت</label>
+                          <input value="شرکت مس رفسنجان" class="form-control">
+                        </div>
+                      </div>
+                      <div class="px-0 flex-grow-1">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">شماره ثبت نام مدیرعامل</label>
+                          <input value="23765" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row gap-4 px-0 mb-3">
+                      <div class="px-0 flex-grow-1">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">شماره اقتصادی</label>
+                          <input value="48742" class="form-control">
+                        </div>
+                      </div>
+                      <div class="px-0 flex-grow-1">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">شماره تلفن</label>
+                          <input value="2952349876" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row gap-4 px-0 mb-3">
+                      <div class="px-0 flex-grow-1">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">کدپستی</label>
+                          <input value="45698754" class="form-control">
+                        </div>
+                      </div>
+                      <div class="px-0 flex-grow-1">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">متن قرارداد</label>
+                          <textarea rows="5"
+                          class="form-control">متن قرارداد</textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 px-0">
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">آدرس</label>
+                        <textarea rows="5"
+                          class="form-control">شهر رفسنجان، میدان امیرکبیر، بلوار عدالت ، خیابان بنفشه کوچه 12 ، پلاک 18 </textarea>
+                      </div>
+                    </div>
+                    <input type="submit" value="ثبت" class="btn text-white font-bold py-2 w-100 bg-info">
+                  </form>
+                  <form class="mt-4 font-bold mb-4 tab-pane fade active show" id="contractor-tab-pane2" role="tabpanel"
+                    aria-labelledby="contractor-tab" tabindex="0">
+                    <div class="d-flex flex-column flex-md-row gap-4 px-0 mb-3">
+                      <div class="px-0 flex-grow-1">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">عنوان</label>
+                          <input value="قرارداد 2365" class="form-control">
+                        </div>
+                      </div>
+                      <div class="px-0 flex-grow-1">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">شماره قرارداد</label>
+                          <input value="2365" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row gap-4 px-0 mb-3">
+                      <div class="px-0 flex-grow-1">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">نام و نام خانوادگی</label>
+                          <input value="صابر علی نژاد" class="form-control">
+                        </div>
+                      </div>
+                      <div class="px-0 flex-grow-1">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">شماره ملی</label>
+                          <input value="2952349876" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row gap-4 px-0 mb-3">
+                      <div class="px-0 flex-grow-1">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">کدپستی</label>
+                          <input value="45698754" class="form-control">
+                        </div>
+                      </div>
+                      <div class="px-0 flex-grow-1">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">شماره تماس</label>
+                          <input value="09126579876" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 px-0 mb-3">
+                      <div>
+                        <label for="exampleInputEmail1" class="form-label">تاریخ</label>
+                        <input type="text" class="date rounded-3 form-control" data-jdp="">
+                      </div>
+                    </div>
+                    <div class="col-12 px-0">
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">آدرس</label>
+                        <textarea rows="5"
+                          class="form-control">شهر رفسنجان، میدان امیرکبیر، بلوار عدالت ، خیابان بنفشه کوچه 12 ، پلاک 18 </textarea>
+                      </div>
+                    </div>
+                    <input type="submit" value="ثبت" class="btn text-white font-bold py-2 w-100 bg-info">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+
+
+  <script src="assets/js/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script type="text/javascript" src="assets/js/jalalidatepicker.min.js"></script>
+  <script src="assets/js/scrollreveal.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>/
+  <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>

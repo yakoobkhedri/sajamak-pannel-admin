@@ -26,7 +26,7 @@ body {
 .sidebar::-webkit-scrollbar,
 .sidebar::-webkit-scrollbar,
 .sidebar::-webkit-scrollbar,
-section>.col-10::-webkit-scrollbar {
+section>.col-10::-webkit-scrollbar,.chatBox::-webkit-scrollbar {
     width: 4px;
     /* width of the entire scrollbar */
 }
@@ -34,7 +34,7 @@ section>.col-10::-webkit-scrollbar {
 .sidebar::-webkit-scrollbar-track,
 .sidebar::-webkit-scrollbar-track,
 .sidebar::-webkit-scrollbar-track,
-section > .col-10::-webkit-scrollbar-track {
+section > .col-10::-webkit-scrollbar-track,.chatBox::-webkit-scrollbar {
     background: transparent;
     /* color of the tracking area */
     margin: 29px 0;
@@ -43,7 +43,7 @@ section > .col-10::-webkit-scrollbar-track {
 .sidebar::-webkit-scrollbar-thumb,
 .sidebar::-webkit-scrollbar-thumb,
 .sidebar::-webkit-scrollbar-thumb,
-section > .col-10::-webkit-scrollbar-thumb {
+section > .col-10::-webkit-scrollbar-thumb,.chatBox::-webkit-scrollbar-thumb {
     background-color: gray;
     /* color of the scroll thumb */
     border-radius: 40px;
@@ -52,7 +52,7 @@ section > .col-10::-webkit-scrollbar-thumb {
     /* creates padding around scroll thumb */
 }
 
-.sidebar,section>.col-10 {
+.sidebar,section>.col-10,.chatBox {
     scrollbar-width: thin;
     /* "auto" or "thin" */
     scrollbar-color: gray transparent;
@@ -79,6 +79,9 @@ section > .col-10::-webkit-scrollbar-thumb {
 
 .bg-gray3 {
     background-color: #E5E7EB;
+}
+.bg-main{
+    background-color: #1F2A37;
 }
 
 .text-gray {
@@ -114,6 +117,9 @@ a {
 .h-15{
     height: 15px;
 }
+.h-24{
+    height: 24px;
+}
 .h-48 {
     height: 48px;
 }
@@ -126,6 +132,9 @@ a {
 .w-15{
     width: 15px;
 }
+.w-24{
+    width: 24px;
+}
 .w-48 {
     width: 48px;
 }
@@ -134,6 +143,9 @@ a {
 }
 .w-120 {
     width: 120px;
+}
+.w-145 {
+    width: 145px;
 }
 .w-184 {
     width: 184px!important
@@ -145,6 +157,16 @@ a {
 
 .w-390 {
     width: 390px;
+}
+.max-w-945{
+    max-width: 945px;
+    width: 100%;
+}
+.h-484 {
+    height: 484px;
+}
+.h-690 {
+    height: 690px;
 }
 
 .top-52{
@@ -177,6 +199,9 @@ a {
 .rounded-4 {
     border-radius: 18px;
 }
+.rounded-6 {
+    border-radius: 6px;
+}
 
 .rounded-12 {
     border-radius: 12px;
@@ -189,6 +214,12 @@ a {
 }
 .opacity-none {
     opacity: 0;
+}
+.resize-none{
+    resize: none;
+}
+.form-control:focus{
+    box-shadow: none;
 }
 
 .breadcrumb-item+.breadcrumb-item::before {

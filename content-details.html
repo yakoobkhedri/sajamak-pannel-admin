@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/styles.css'>
+    <link rel="stylesheet" href="assets/css/jquery.dataTables.min.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/jalalidatepicker.min.css" />
+    <title>محتوا</title>
+</head>
+
+<body>
+
+    <section class="d-flex mx-0">
+        <div class="px-0 col-2 sidebar transition h-100vh">
+            <div class="py-4 px-3">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center gap-3">
+                        <img alt="" src="assets/img/Vector.png" class="cursor">
+                        <img alt="bell-alert" src="assets/img/bell-alert.svg" class="cursor transition">
+                        <img alt="cog" src="assets/img/cog.svg" class="cursor transition">
+                    </div>
+                    <img alt="" src="assets/img/chevron-double-right.svg" class="cursor transition" id="toggle-sidebar">
+                </div>
+                <div
+                    class="avatar d-flex align-items-center justify-content-center rounded-circle mx-auto mt-5 position-relative">
+                    <div>
+                        <img src="assets/img/69.png">
+                        <div>
+                            <input type="file"
+                                class="position-absolute top-0 end-0 start-0 bottom-0 w-100 z-10 cursor opacity-none">
+                            <img alt="add-circle" src="assets/img/add-circle.svg"
+                                class="position-absolute -bottom-4 start-0 cursor">
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center text-white mt-4 avatar-name transition">
+                    <h6 class="font-bold">صابر علی نژاد</h6>
+                    <p class="text-white-50">مدیر عامل</p>
+                </div>
+            </div>
+            <ul class="m-0 px-0 fw-bold">
+                <li class="px-3 transition">
+                    <a href="requests.html" class="d-flex align-items-center justify-content-between text-white">
+                        <div class="d-flex align-items-center gap-3">
+                            <img alt="menu" src="assets/img/document-text.svg">
+                            <p class="mb-0">درخواست ها</p>
+                        </div>
+                        <img alt="arrow" src="assets/img/arrow-left.png">
+                    </a>
+                </li>
+                <li class="px-3 transition">
+                    <a href="projects.html" class="d-flex align-items-center justify-content-between text-white">
+                        <div class="d-flex align-items-center gap-3">
+                            <img alt="menu" src="assets/img/document-text.svg">
+                            <p class="mb-0">پروژه ها</p>
+                        </div>
+                        <img alt="arrow" src="assets/img/arrow-left.png">
+                    </a>
+                </li>
+                <li class="px-3 transition">
+                    <a href="contractors.html" class="d-flex align-items-center justify-content-between text-white">
+                        <div class="d-flex align-items-center gap-3">
+                            <img alt="menu" src="assets/img/contractor-icon.svg">
+                            <p class="mb-0">پیمانکاران</p>
+                        </div>
+                        <img alt="arrow" src="assets/img/arrow-left.png">
+                    </a>
+                </li>
+                <li class="px-3 transition">
+                    <a href="products.html" class="d-flex align-items-center justify-content-between text-white">
+                        <div class="d-flex align-items-center gap-3">
+                            <img alt="menu" src="assets/img/product-icon.svg">
+                            <p class="mb-0">مواد و محصولات</p>
+                        </div>
+                        <img alt="arrow" src="assets/img/arrow-left.png">
+                    </a>
+                </li>
+                <li class="px-3 transition">
+                    <a href="machines.html" class="d-flex align-items-center justify-content-between text-white">
+                        <div class="d-flex align-items-center gap-3">
+                            <img alt="menu" src="assets/img/truck.svg">
+                            <p class="mb-0">تجهیزات</p>
+                        </div>
+                        <img alt="arrow" src="assets/img/arrow-left.png">
+                    </a>
+                </li>
+                <li class="px-3 transition">
+                    <a href="mines.html" class="d-flex align-items-center justify-content-between text-white">
+                        <div class="d-flex align-items-center gap-3">
+                            <img alt="menu" src="assets/img/mine-icon.svg">
+                            <p class="mb-0">معادن</p>
+                        </div>
+                        <img alt="arrow" src="assets/img/arrow-left.png">
+                    </a>
+                </li>
+                <li class="px-3 transition">
+                    <a href="contracts.html" class="d-flex align-items-center justify-content-between text-white">
+                        <div class="d-flex align-items-center gap-3">
+                            <img alt="menu" src="assets/img/wallet.svg">
+                            <p class="mb-0">قراردادها</p>
+                        </div>
+                        <img alt="arrow" src="assets/img/arrow-left.png">
+                    </a>
+                </li>
+                <li class="px-3 transition active">
+                    <a href="content.html" class="d-flex align-items-center justify-content-between text-white">
+                        <div class="d-flex align-items-center gap-3">
+                            <img alt="menu" src="assets/img/document-text.svg">
+                            <p class="mb-0">صفحات</p>
+                        </div>
+                        <img alt="arrow" src="assets/img/arrow-left.png">
+                    </a>
+                </li>
+                <li class="px-3 transition">
+                    <a href="profile.html" class="d-flex align-items-center justify-content-between text-white">
+                        <div class="d-flex align-items-center gap-3">
+                            <img alt="menu" src="assets/img/user.svg">
+                            <p class="mb-0">مدیریت</p>
+                        </div>
+                        <img alt="arrow" src="assets/img/arrow-left.png">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="p-3 col-10 bg-gray flex-grow-1 h-100vh overflow-auto">
+            <div id="overlay"></div>
+            <!-- header -->
+            <header class="d-flex align-items-lg-center gap-4 flex-column flex-lg-row justify-content-lg-between">
+                <div class="d-flex flex-column flex-md-row align-items-center gap-3">
+                    <div class="d-flex align-items-center gap-3 justify-content-between w-100">
+                        <svg id="openSidebar" xmlns="http://www.w3.org/2000/svg" width="33" height="33"
+                            fill="currentColor" class="bi bi-list d-lg-none cursor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                        </svg>
+                        <a>
+                            <img alt="logo" src="assets/img/Frame 9249.png">
+                        </a>
+                    </div>
+                    <div
+                        class="bg-white rounded-12 w-390 py-1 px-2 border d-flex align-items-center justify-content-between">
+                        <input placeholder="جستجو" class="border-0 outline-none flex-grow-1">
+                        <img alt="search" src="assets/img/Vector.svg">
+                    </div>
+                </div>
+                <div class="d-flex align-items-center gap-3">
+                    <div class="language position-relative cursor">
+                        <div class="d-flex align-items-center gap-2 dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown">
+                            <img alt="language" src="assets/img/artwork.png">
+                            <p class="mb-0 fw-bold fs-7 text-secondary">فارسی</p>
+                        </div>
+                        <ul class="dropdown-menu p-0 m-0 font-bold bg-white shadow-sm rounded-4">
+                            <li class="d-flex align-items-center justify-content-center py-3 gap-3 border-bottom">
+                                <img alt="language" src="assets/img/artwork.png">
+                                <p class="mb-0 fw-bold fs-7 text-secondary">فارسی</p>
+                            </li>
+                            <li class="d-flex align-items-center justify-content-center py-3 gap-3">
+                                <img alt="language" src="assets/img/artwork.png">
+                                <p class="mb-0 fw-bold fs-7 text-secondary">English</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <span class="divider"></span>
+                    <div class="exit d-flex align-items-center gap-2 cursor">
+                        <img alt="language" src="assets/img/exit.svg">
+                        <p class="mb-0 fw-bold fs-7 text-secondary">خروج از حساب </p>
+                    </div>
+                </div>
+            </header>
+            <!-- main -->
+            <main>
+                <!-- breadcrumb -->
+                <nav aria-label="breadcrumb" class="mt-4">
+                  <ol class="breadcrumb fs-7 font-bold">
+                    <li class="breadcrumb-item active text-dark" aria-current="page">صفحات</li>
+                  </ol>
+                </nav>
+                <!-- table -->
+                <form class="bg-white rounded-4 pb-3">
+                  <div class="d-flex align-items-center flex-wrap gap-3 justify-content-between p-3 border-bottom">
+                    <a href="content.html" class="d-flex align-items-center gap-2 font-bold mb-0 text-dark">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M13.5 4.5L21 12M21 12L13.5 19.5M21 12H3" stroke="#374151" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      صفحه اصلی
+                      </a>
+                      <select class="bg-transparent border rounded-3 py-2 px-4">
+                        <option class="text-success">فعال</option>
+                        <option class="text-danger">غیرفعال</option>
+                      </select>
+                  </div>
+                  <!--  -->
+                  <div class="p-md-3 p-1">
+                    <div class="row g-4">
+                      <div class="d-flex flex-wrap position-relative justify-content-between mt-4 px-md-4 px-2 gap-4">
+                        <div class="d-flex flex-column flex-grow-1 px-2 position-relative rounded-3 overflow-hidden align-items-center cursor text-secondary gap-1 justify-content-center">
+                          <img alt="banner" src="assets/img/image 4.png" class="img-fluid w-100">
+                          <div class="position-absolute d-flex align-items-center justify-content-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M2.16699 6C2.16699 4.75736 3.17435 3.75 4.41699 3.75H20.917C22.1596 3.75 23.167 4.75736 23.167 6V18C23.167 19.2426 22.1596 20.25 20.917 20.25H4.41699C3.17435 20.25 2.16699 19.2426 2.16699 18V6ZM3.66699 16.0607V18C3.66699 18.4142 4.00278 18.75 4.41699 18.75H20.917C21.3312 18.75 21.667 18.4142 21.667 18V16.0607L18.9777 13.3713C18.3919 12.7855 17.4421 12.7855 16.8563 13.3713L15.9777 14.25L16.9473 15.2197C17.2402 15.5126 17.2402 15.9874 16.9473 16.2803C16.6544 16.5732 16.1796 16.5732 15.8867 16.2803L10.7277 11.1213C10.1419 10.5355 9.19212 10.5355 8.60633 11.1213L3.66699 16.0607ZM13.792 8.25C13.792 7.62868 14.2957 7.125 14.917 7.125C15.5383 7.125 16.042 7.62868 16.042 8.25C16.042 8.87132 15.5383 9.375 14.917 9.375C14.2957 9.375 13.792 8.87132 13.792 8.25Z" fill="white"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M17.1671 4.47819V4.70498C18.1218 4.79237 19.0687 4.90731 20.0068 5.04898C20.3541 5.10143 20.7002 5.15755 21.0451 5.2173C21.4533 5.28799 21.7268 5.67617 21.6561 6.0843C21.5854 6.49244 21.1972 6.76598 20.7891 6.69529C20.7195 6.68323 20.6498 6.67132 20.5801 6.65957L19.5747 19.7301C19.4545 21.2931 18.1512 22.5 16.5835 22.5H8.75068C7.18308 22.5 5.87975 21.2931 5.75952 19.7301L4.7541 6.65957C4.68439 6.67132 4.61473 6.68323 4.54513 6.69529C4.13699 6.76598 3.74882 6.49244 3.67812 6.0843C3.60742 5.67617 3.88097 5.28799 4.2891 5.2173C4.634 5.15755 4.98014 5.10143 5.32747 5.04898C6.26557 4.90731 7.21239 4.79237 8.16711 4.70498V4.47819C8.16711 2.91371 9.37965 1.57818 10.9826 1.52691C11.5419 1.50901 12.1035 1.5 12.6671 1.5C13.2308 1.5 13.7923 1.50901 14.3517 1.52691C15.9546 1.57818 17.1671 2.91371 17.1671 4.47819ZM11.0305 3.02614C11.5739 3.00876 12.1195 3 12.6671 3C13.2148 3 13.7603 3.00876 14.3037 3.02614C15.0583 3.05028 15.6671 3.68393 15.6671 4.47819V4.59082C14.6748 4.53056 13.6745 4.5 12.6671 4.5C11.6598 4.5 10.6595 4.53056 9.66712 4.59082V4.47819C9.66712 3.68393 10.2759 3.05028 11.0305 3.02614ZM10.6757 8.97118C10.6598 8.55727 10.3114 8.23463 9.89744 8.25055C9.48354 8.26647 9.1609 8.61492 9.17682 9.02882L9.52298 18.0288C9.5389 18.4427 9.88734 18.7654 10.3012 18.7494C10.7152 18.7335 11.0378 18.3851 11.0219 17.9712L10.6757 8.97118ZM16.1565 9.02882C16.1724 8.61492 15.8498 8.26647 15.4359 8.25055C15.022 8.23463 14.6735 8.55727 14.6576 8.97118L14.3114 17.9712C14.2955 18.3851 14.6182 18.7335 15.0321 18.7494C15.446 18.7654 15.7944 18.4427 15.8103 18.0288L16.1565 9.02882Z" fill="white"/>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-column flex-grow-1 px-2 position-relative rounded-3 overflow-hidden align-items-center cursor text-secondary gap-1 justify-content-center">
+                          <img alt="banner" src="assets/img/image 4.png" class="img-fluid w-100">
+                          <div class="position-absolute d-flex align-items-center justify-content-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M2.16699 6C2.16699 4.75736 3.17435 3.75 4.41699 3.75H20.917C22.1596 3.75 23.167 4.75736 23.167 6V18C23.167 19.2426 22.1596 20.25 20.917 20.25H4.41699C3.17435 20.25 2.16699 19.2426 2.16699 18V6ZM3.66699 16.0607V18C3.66699 18.4142 4.00278 18.75 4.41699 18.75H20.917C21.3312 18.75 21.667 18.4142 21.667 18V16.0607L18.9777 13.3713C18.3919 12.7855 17.4421 12.7855 16.8563 13.3713L15.9777 14.25L16.9473 15.2197C17.2402 15.5126 17.2402 15.9874 16.9473 16.2803C16.6544 16.5732 16.1796 16.5732 15.8867 16.2803L10.7277 11.1213C10.1419 10.5355 9.19212 10.5355 8.60633 11.1213L3.66699 16.0607ZM13.792 8.25C13.792 7.62868 14.2957 7.125 14.917 7.125C15.5383 7.125 16.042 7.62868 16.042 8.25C16.042 8.87132 15.5383 9.375 14.917 9.375C14.2957 9.375 13.792 8.87132 13.792 8.25Z" fill="white"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M17.1671 4.47819V4.70498C18.1218 4.79237 19.0687 4.90731 20.0068 5.04898C20.3541 5.10143 20.7002 5.15755 21.0451 5.2173C21.4533 5.28799 21.7268 5.67617 21.6561 6.0843C21.5854 6.49244 21.1972 6.76598 20.7891 6.69529C20.7195 6.68323 20.6498 6.67132 20.5801 6.65957L19.5747 19.7301C19.4545 21.2931 18.1512 22.5 16.5835 22.5H8.75068C7.18308 22.5 5.87975 21.2931 5.75952 19.7301L4.7541 6.65957C4.68439 6.67132 4.61473 6.68323 4.54513 6.69529C4.13699 6.76598 3.74882 6.49244 3.67812 6.0843C3.60742 5.67617 3.88097 5.28799 4.2891 5.2173C4.634 5.15755 4.98014 5.10143 5.32747 5.04898C6.26557 4.90731 7.21239 4.79237 8.16711 4.70498V4.47819C8.16711 2.91371 9.37965 1.57818 10.9826 1.52691C11.5419 1.50901 12.1035 1.5 12.6671 1.5C13.2308 1.5 13.7923 1.50901 14.3517 1.52691C15.9546 1.57818 17.1671 2.91371 17.1671 4.47819ZM11.0305 3.02614C11.5739 3.00876 12.1195 3 12.6671 3C13.2148 3 13.7603 3.00876 14.3037 3.02614C15.0583 3.05028 15.6671 3.68393 15.6671 4.47819V4.59082C14.6748 4.53056 13.6745 4.5 12.6671 4.5C11.6598 4.5 10.6595 4.53056 9.66712 4.59082V4.47819C9.66712 3.68393 10.2759 3.05028 11.0305 3.02614ZM10.6757 8.97118C10.6598 8.55727 10.3114 8.23463 9.89744 8.25055C9.48354 8.26647 9.1609 8.61492 9.17682 9.02882L9.52298 18.0288C9.5389 18.4427 9.88734 18.7654 10.3012 18.7494C10.7152 18.7335 11.0378 18.3851 11.0219 17.9712L10.6757 8.97118ZM16.1565 9.02882C16.1724 8.61492 15.8498 8.26647 15.4359 8.25055C15.022 8.23463 14.6735 8.55727 14.6576 8.97118L14.3114 17.9712C14.2955 18.3851 14.6182 18.7335 15.0321 18.7494C15.446 18.7654 15.7944 18.4427 15.8103 18.0288L16.1565 9.02882Z" fill="white"/>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-column flex-grow-1 px-2 position-relative border rounded-3 align-items-center cursor text-secondary gap-1 justify-content-center">
+                            <input type="file" class="position-absolute end-0 start-0 bottom-0 top-0 w-100 opacity-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
+                                <path d="M29.7001 16C29.7001 15.8533 29.6201 15.7066 29.5801 15.56C29.5184 15.3012 29.4382 15.0472 29.3401 14.8C29.2734 14.64 29.1801 14.48 29.1001 14.3066C29.0201 14.1333 28.9001 13.9066 28.7801 13.72C28.6601 13.5333 28.5001 13.44 28.5001 13.3333C28.5001 13.2266 28.2334 13 28.0868 12.84C27.9401 12.68 27.8067 12.5733 27.6601 12.44L27.1667 12L26.6867 11.68C26.4983 11.5647 26.3023 11.4622 26.1001 11.3733L25.5801 11.1333C25.3623 11.0526 25.1396 10.9858 24.9134 10.9333C24.7342 10.8806 24.5515 10.8405 24.3667 10.8133L24.0601 10.6666C23.516 9.09471 22.4955 7.73146 21.1405 6.76659C19.7855 5.80172 18.1635 5.2832 16.5001 5.2832C14.8367 5.2832 13.2146 5.80172 11.8596 6.76659C10.5047 7.73146 9.48414 9.09471 8.94008 10.6666L8.70008 10.7333C8.51528 10.7605 8.33261 10.8006 8.15341 10.8533C7.9272 10.9058 7.70453 10.9726 7.48675 11.0533L6.96675 11.2933C6.76451 11.3822 6.56851 11.4847 6.38008 11.6L5.90008 12L5.40675 12.4133C5.26008 12.5466 5.11341 12.6666 4.98008 12.8133C4.84675 12.96 4.70008 13.1466 4.56675 13.3066C4.43341 13.4666 4.32675 13.6133 4.22008 13.7866C4.11341 13.96 4.00675 14.1733 3.90008 14.3733C3.79341 14.5733 3.72675 14.7066 3.66008 14.8666C3.562 15.1139 3.4818 15.3679 3.42008 15.6266C3.42008 15.7733 3.32675 15.92 3.30008 16.0666C3.21709 16.4839 3.17246 16.9079 3.16675 17.3333C3.173 17.7404 3.21314 18.1462 3.28675 18.5466C3.28675 18.68 3.35341 18.8 3.38008 18.9333C3.44598 19.1952 3.5261 19.4534 3.62008 19.7066L3.78008 20.0933C3.89745 20.3504 4.03106 20.5998 4.18008 20.84L4.36675 21.1333C4.38593 21.1707 4.40823 21.2064 4.43341 21.24L4.50008 21.3333C5.12106 22.1613 5.92629 22.8333 6.85199 23.2962C7.77769 23.759 8.79845 24 9.83342 24H13.8334V22.1733C13.4283 22.4083 12.9684 22.5325 12.5001 22.5333C11.7778 22.5266 11.0875 22.2341 10.5801 21.72C10.3365 21.468 10.1449 21.1704 10.0164 20.8443C9.88791 20.5182 9.82495 20.1699 9.83114 19.8195C9.83734 19.469 9.91256 19.1232 10.0525 18.8019C10.1925 18.4805 10.3944 18.1899 10.6467 17.9466L14.6467 14.08C15.1444 13.6003 15.8089 13.3326 16.5001 13.3333C17.2062 13.3363 17.8823 13.6192 18.3801 14.12L22.3801 18.12C22.8768 18.6196 23.1555 19.2955 23.1555 20C23.1555 20.7045 22.8768 21.3803 22.3801 21.88C21.8823 22.3808 21.2062 22.6637 20.5001 22.6666C20.031 22.6711 19.5698 22.5465 19.1667 22.3066V24H23.1667C24.2017 24 25.2225 23.759 26.1482 23.2962C27.0739 22.8333 27.8791 22.1613 28.5001 21.3333L28.5667 21.2666C28.5919 21.233 28.6142 21.1973 28.6334 21.16L28.8201 20.8666C28.9691 20.6265 29.1027 20.3771 29.2201 20.12L29.3801 19.7333C29.4741 19.4801 29.5542 19.2219 29.6201 18.96C29.6201 18.8266 29.6867 18.7066 29.7134 18.5733C29.7885 18.1641 29.8287 17.7493 29.8334 17.3333C29.8319 16.8856 29.7872 16.4391 29.7001 16Z" fill="#919EAB"></path>
+                                <path d="M17.4467 15.0533C17.1975 14.809 16.8624 14.6722 16.5134 14.6722C16.1644 14.6722 15.8293 14.809 15.5801 15.0533L11.5801 18.92C11.4386 19.0367 11.3227 19.1814 11.2397 19.345C11.1567 19.5085 11.1083 19.6875 11.0976 19.8706C11.0869 20.0537 11.1141 20.2371 11.1775 20.4092C11.2409 20.5813 11.3391 20.7385 11.466 20.8709C11.593 21.0034 11.7458 21.1082 11.9151 21.1788C12.0844 21.2495 12.2664 21.2845 12.4498 21.2816C12.6332 21.2787 12.814 21.2379 12.981 21.162C13.1479 21.086 13.2974 20.9764 13.4201 20.84L15.1667 19.1466L15.1667 26.6666C15.1667 27.0203 15.3072 27.3594 15.5573 27.6094C15.8073 27.8595 16.1465 28 16.5001 28C16.8537 28 17.1928 27.8595 17.4429 27.6094C17.6929 27.3594 17.8334 27.0203 17.8334 26.6666V19.2133L19.5534 20.9466C19.6774 21.0716 19.8248 21.1708 19.9873 21.2385C20.1498 21.3062 20.3241 21.341 20.5001 21.341C20.6761 21.341 20.8504 21.3062 21.0129 21.2385C21.1753 21.1708 21.3228 21.0716 21.4467 20.9466C21.5717 20.8227 21.6709 20.6752 21.7386 20.5127C21.8063 20.3503 21.8411 20.176 21.8411 20C21.8411 19.824 21.8063 19.6497 21.7386 19.4872C21.6709 19.3247 21.5717 19.1773 21.4467 19.0533L17.4467 15.0533Z" fill="#919EAB"></path>
+                                </svg>
+                           <span class="fw-normal fs-14">Upload file</span>
+                        </div>
+                    </div>
+                      <div class="col-12 fs-14">
+                          <div>
+                              <label for="exampleInputEmail1" class="form-label">عنوان</label>
+                              <input type="text" class="form-control" placeholder="سجامک، سامانه جامع اجرایی معادن کشور ">
+                          </div>
+                      </div>
+                      <div class="col-12">
+                          <div>
+                              <textarea rows="9" class="form-control"></textarea>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                </form>
+              </main>
+        </div>
+    </section>
+
+
+    <script type="text/javascript" src="assets/js/jalalidatepicker.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/jquery.dataTables.min.js"></script>
+
+</body>
+
+</html>

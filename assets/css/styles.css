@@ -361,6 +361,19 @@ table img{
   .select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover{
     color: red!important;
   }
+  /* editor */
+  .tox-tinymce{
+    min-height: 800px;
+  }
+  .tox-statusbar{
+    display: none!important;
+  }
+  .tox .tox-menubar,.tox-toolbar__primary {
+    background-color: #f9fafb!important;
+  }
+  #mytextarea > *, #mytextarea{
+    border: none!important;
+  }
 
 /* responsive */
 @media only screen and (max-width:1400px) {}

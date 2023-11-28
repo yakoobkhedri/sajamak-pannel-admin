@@ -185,7 +185,7 @@
         </nav>
         <!-- table -->
         <div class="bg-white rounded-4 pb-3">
-          <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between p-3 border-bottom">
+          <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between p-3">
             <a href="new-contracts .html" class="d-flex align-items-center gap-2 font-bold mb-0 text-dark">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path d="M4.5 12L19.5 12M19.5 12L12.75 5.25M19.5 12L12.75 18.75" stroke="#0F172A" stroke-width="1.5"
@@ -214,11 +214,7 @@
           </div>
           <div>
             <!-- ck editor -->
-            <form method="post">
-              <textarea id="mytextarea">
-                
-              </textarea>
-            </form>
+            <div id="editor"></div>
             <!--  -->
             <div class="me-auto mt-5" id="buttons">
               <div class="d-flex align-items-center justify-content-end gap-3">
@@ -262,15 +258,17 @@
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
   <script src="../assets/js/scrollreveal.min.js"></script>
   <script src="../assets/js/jquery-3.7.1.min.js"></script>
+  <script src="../assets/js/ckeditor.js"></script>
   <script src="../assets/js/bootstrap.bundle.min.js"></script>/
   <script src="../assets/js/scripts.js"></script>
   <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
-    <script>
-      // editor
-      tinymce.init({
-        selector: '#mytextarea',
+  <script>
+    ClassicEditor
+      .create(document.querySelector('#editor'))
+      .catch(error => {
+        console.error(error);
       });
-    </script>
+  </script>
 
 </body>
 

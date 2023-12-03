@@ -247,36 +247,47 @@
                 <form class="row g-4 mt-4">
                   <div class="col-lg-6">
                     <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">دسته تجهیزات</label>
+                      <label for="exampleInputEmail1" class="form-label">نوع خدمات</label>
                       <select class="form-select">
-                        <option>تجهیزات راه سازی</option>
-                        <option>تجهیزات حمل و نقل</option>
-                        <option>تجهیزات ماشین آلات معدنی</option>
-                        <option>تجهیزات خردایش و فراوری</option>
+                        <option>استیجاری</option>
+                        <option>فروش</option>
                       </select>
                     </div>
                   </div>
                   <div class="col-lg-6">
-                    <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">زمینه فعالیت</label>
-                      <select name="field_of_activity" class="form-select">
-                        <option value="mining_road">راه سازی و محدوده معدنی</option>
-                        <option value="exploration_drilling">حفاری و ترانشه ، اکتشافات</option>
-                        <option value="blasting_explosives">آتشکاری و انفجار</option>
-                        <option value="extraction_waste">باطله برداری و استخراج</option>
-                        <option value="soil_operations_transport">عملیات خاکی-حمل و نقل</option>
-                        <option value="cut_crush_separate">برش ، خردایش، جدایش</option>
-                        <option value="material_transport">انتقال مواد(نقاله،جرثقیل،...)</option>
-                        <option value="filtration_dust_collection">فیلتراسیون - غبارگیری</option>
-                        <option value="furnace_thermal_operations">کوره  و عملیات -حرارتی</option>
-                </select>
+                    <div class="mb-3 machineCategory">
+                      <label for="exampleInputEmail1" class="form-label">دسته تجهیزات</label>
+                      <select class="form-select">
+                        <option data-id="1">تجهیزات راه سازی</option>
+                        <option data-id="5">تجهیزات حمل و نقل</option>
+                        <option data-id="3">تجهیزات ماشین آلات معدنی</option>
+                        <option data-id="4">تجهیزات خردایش و فراوری</option>
+                      </select>
                     </div>
                   </div>
                   <div class="col-lg-6">
-                    <div class="mb-3">
+                    <div class="mb-3 activityFields">
+                      <label for="exampleInputEmail1" class="form-label">زمینه فعالیت</label>
+                      <select data-id="1" name="field_of_activity" class="form-select">
+                        <option value="mining_road"></option>
+                      </select>
+                      <select id="foreign" data-id="5" name="field_of_activity" class="form-select d-none">
+                        <option data-id="5" value="mining_road">داخلی</option>
+                        <option data-id="6" value="mining_road">خارجی</option>
+                      </select>
+                      <select data-id="3" name="field_of_activity" class="form-select d-none">
+                        <option value="mining_road">استخراج</option>
+                      </select>
+                      <select data-id="4" name="field_of_activity" class="form-select d-none">
+                        <option value="mining_road"></option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="mb-3 machineType">
                       <label for="exampleInputEmail1" class="form-label">نوع تجهیزات و ماشین
                         آلات</label>
-                      <select class="form-select">
+                      <select data-id="1" class="form-select">
                         <option>گریدر</option>
                         <option>غلتک</option>
                         <option>بیل</option>
@@ -284,18 +295,66 @@
                         <option>کامیون</option>
                         <option>بولدوزر</option>
                         <option>پیکور</option>
-                        <option>چکش</option>
-                        <option>کمپرسور</option>
+                        <option>فینیشر</option>
+                        <option>ماشین آب پاش</option>
+                      </select>
+                      <select data-id="3" class="form-select d-none">
+                        <option>گریدر</option>
+                        <option>غلتک</option>
+                        <option>بیل</option>
+                        <option>لودر</option>
+                        <option>کامیون</option>
+                        <option>بولدوزر</option>
+                        <option>آب پاش</option>
+                        <option>دامپتراک</option>
                         <option>شاول</option>
-                        <option>تراک</option>
-                        <option>ماشین حفاری</option>
+                        <option>کمپرسور</option>
+                        <option>حفاری</option>
+                        <option>آتش بار</option>
+                      </select>
+                      <select data-id="4" class="form-select d-none">
+                        <option>چکش</option>
+                        <option>کوبیت</option>
+                        <option>فک</option>
+                        <option>هیدروکن</option>
+                        <option>سرند</option>
+                        <option>فیدر</option>
+                        <option>بالمیل</option>
+                        <option>ریموند</option>
+                        <option>راک اندراک</option>
+                        <option>آسیاب</option>
+                        <option>رادمیل</option>
+                        <option>نوار نقاله</option>
+                        <option>سنگ شکن موبایل</option>
+                        <option>کانکس</option>
+                        <option>تانکر</option>
+                        <option>دیزل ژنراتور</option>
+                      </select>
+                      <select data-id="5" class="form-select d-none">
+                        <option>بیل</option>
+                        <option>لودر</option>
+                        <option>دامتراک</option>
+                        <option>بولدوزر</option>
+                        <option>شاول</option>
+                        <option>کامیون</option>
+                        <option>پیکاپ</option>
+                        <option>کمرشکن</option>
+                      </select>
+                      <select data-id="6" class="form-select d-none">
+                        <option>تریلی</option>
+                        <option>کامیون</option>
+                        <option>ریلی</option>
+                        <option>ترانزیت</option>
+                        <option>کمرشکن</option>
+                        <option>پیکاپ</option>
+                        <option>هوایی</option>
                       </select>
                     </div>
                   </div>
                   <div class="col-lg-6">
                     <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">عنوان محصول</label>
-                      <input type="text" class="form-control">
+                      <label for="exampleInputEmail1" class="form-label">تعداد محصول</label>
+                      <input type="number" class="form-control">
                     </div>
                   </div>
                   <div class="col-lg-6">

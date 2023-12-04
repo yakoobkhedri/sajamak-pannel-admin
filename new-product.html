@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='../assets/css/select2.min.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../assets/css/styles.css'>
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../assets/css/jquery.uploader.css">
@@ -258,20 +259,90 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
-                                        <div class="mb-3">
+                                        <div class="mb-3 productName">
                                             <label for="exampleInputEmail1" class="form-label">عنوان محصول</label>
-                                            <input type="text" class="form-control" placeholder=""
-                                                value="استات منیزیم ">
+                                           <div class="first" data-id="1">
+                                            <select class="js-example-basic-single form-select" name="state">
+                                                <option>مرمر</option>
+                                                <option>مرمریت</option>
+                                                <option>تراورتن</option>
+                                                <option>گرانیت</option>
+                                                <option>تراونیکس</option>
+                                            </select>
+                                           </div>
+                                            <div data-id="2">
+                                                <select class="js-example-basic-single form-select" name="state">
+                                                    <option>دسته نیمه قیتی فیروزه</option>
+                                                    <option>عقیق</option>
+                                                    <option>یشم</option>
+                                                    <option>جاسپر</option>
+                                                    <option>کوارتز</option>
+                                                    <option>اوپال</option>
+                                                    <option>دسته قیمتی الماس</option>
+                                                    <option>دمانتوئید</option>
+                                                    <option>آلماندین</option>
+                                                    <option>زمرد</option>
+                                                    <option>برلیان</option>
+                                                    <option>بریل</option>
+                                                    <option>یاقوت</option>
+                                                </select>
+                                            </div>
+                                            <div data-id="3">
+                                                <select class="js-example-basic-single form-select" name="state">
+                                                    <option>گچ</option>
+                                                    <option>آهک خام</option>
+                                                    <option>آهک هیدراته</option>
+                                                    <option>گوگرد</option>
+                                                    <option>پوکه</option>
+                                                    <option>زئولیت</option>
+                                                    <option>پرلیت</option>
+                                                    <option>بوکسیت</option>
+                                                    <option>شن و ماسه</option>
+                                                    <option>خاک رس</option>
+                                                    <option>خاک نسوز</option>
+                                                    <option>خاک اخری</option>
+                                                    <option>بنتونیت</option>
+                                                    <option>پوزولان</option>
+                                                    <option>سیلیش</option>
+                                                    <option>دولومیت</option>
+                                                    <option>ورمی کولیت</option>
+                                                    <option>فلدسپات</option>
+                                                    <option>هماتیت</option>
+                                                    <option>سیمان</option>
+                                                    <option>نمک</option>
+                                                    <option>قیر طبیعی</option>
+                                                </select>
+                                            </div>
+                                            <div data-id="4">
+                                                <select class="js-example-basic-single form-select" name="state">
+                                                    <option>آهن مگنت</option>
+                                                    <option>مس</option>
+                                                    <option>آلومینیم</option>
+                                                    <option>قلع</option>
+                                                    <option>نیکل</option>
+                                                    <option>منگنز</option>
+                                                    <option>منیزیم</option>
+                                                    <option>کرومیت</option>
+                                                    <option>آهن پلاسه</option>
+                                                    <option>تیتانیوم</option>
+                                                    <option>سرب</option>
+                                                    <option>روی</option>
+                                                    <option>طلا</option>
+                                                    <option>نقره</option>
+                                                    <option>پلاتین</option>
+                                                    <option>کبالت</option>
+                                                </select>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
-                                        <div class="mb-3">
+                                        <div class="mb-3 kalaType">
                                             <label for="exampleInputEmail1" class="form-label">نوع کالا</label>
                                             <select class="form-select">
-                                                <option>سنگ های تزئینی (ساختمانی)</option>
-                                                <option>سنگ های زینتی</option>
-                                                <option>کانی های غیرفلزی(خاکهای صنعتی)</option>
-                                                <option>کانی های فلزی</option>
+                                                <option data-id="1">سنگ های تزئینی (ساختمانی)</option>
+                                                <option data-id="2">سنگ های زینتی</option>
+                                                <option data-id="3">کانی های غیرفلزی(خاکهای صنعتی)</option>
+                                                <option data-id="4">کانی های فلزی</option>
                                             </select>
                                         </div>
                                     </div>
@@ -368,9 +439,10 @@
     </section>
 
 
+    <script src="../assets/js/jquery-3.7.1.min.js"></script>
+    <script src="../assets/js/select2.min.js"></script>
     <script src="../assets/js/scripts.js"></script>
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="../assets/js/jquery.uploader.min.js"></script>
     <script type="application/javascript">
         let ajaxConfig = {

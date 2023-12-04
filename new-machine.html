@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+  <link rel='stylesheet' type='text/css' media='screen' href='../assets/css/select2.min.css'>
   <link rel='stylesheet' type='text/css' media='screen' href='../assets/css/styles.css'>
   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../assets/css/jquery.uploader.css">
@@ -287,50 +288,57 @@
                     <div class="mb-3 machineType">
                       <label for="exampleInputEmail1" class="form-label">نوع تجهیزات و ماشین
                         آلات</label>
-                      <select data-id="1" class="form-select">
-                        <option>گریدر</option>
-                        <option>غلتک</option>
-                        <option>بیل</option>
-                        <option>لودر</option>
-                        <option>کامیون</option>
-                        <option>بولدوزر</option>
-                        <option>پیکور</option>
-                        <option>فینیشر</option>
-                        <option>ماشین آب پاش</option>
-                      </select>
-                      <select data-id="3" class="form-select d-none">
-                        <option>گریدر</option>
-                        <option>غلتک</option>
-                        <option>بیل</option>
-                        <option>لودر</option>
-                        <option>کامیون</option>
-                        <option>بولدوزر</option>
-                        <option>آب پاش</option>
-                        <option>دامپتراک</option>
-                        <option>شاول</option>
-                        <option>کمپرسور</option>
-                        <option>حفاری</option>
-                        <option>آتش بار</option>
-                      </select>
-                      <select data-id="4" class="form-select d-none">
-                        <option>چکش</option>
-                        <option>کوبیت</option>
-                        <option>فک</option>
-                        <option>هیدروکن</option>
-                        <option>سرند</option>
-                        <option>فیدر</option>
-                        <option>بالمیل</option>
-                        <option>ریموند</option>
-                        <option>راک اندراک</option>
-                        <option>آسیاب</option>
-                        <option>رادمیل</option>
-                        <option>نوار نقاله</option>
-                        <option>سنگ شکن موبایل</option>
-                        <option>کانکس</option>
-                        <option>تانکر</option>
-                        <option>دیزل ژنراتور</option>
-                      </select>
-                      <select data-id="5" class="form-select d-none">
+                      <div data-id="1" class="first">
+                        <select class="form-select js-example-basic-single">
+                          <option>گریدر</option>
+                          <option>غلتک</option>
+                          <option>بیل</option>
+                          <option>لودر</option>
+                          <option>کامیون</option>
+                          <option>بولدوزر</option>
+                          <option>پیکور</option>
+                          <option>فینیشر</option>
+                          <option>ماشین آب پاش</option>
+                        </select>
+                      </div>
+                      <div data-id="3">
+                        <select class="form-select js-example-basic-single d-none">
+                          <option>گریدر</option>
+                          <option>غلتک</option>
+                          <option>بیل</option>
+                          <option>لودر</option>
+                          <option>کامیون</option>
+                          <option>بولدوزر</option>
+                          <option>آب پاش</option>
+                          <option>دامپتراک</option>
+                          <option>شاول</option>
+                          <option>کمپرسور</option>
+                          <option>حفاری</option>
+                          <option>آتش بار</option>
+                        </select>
+                      </div>
+                      <div data-id="4">
+                        <select class="form-select js-example-basic-single d-none">
+                          <option>چکش</option>
+                          <option>کوبیت</option>
+                          <option>فک</option>
+                          <option>هیدروکن</option>
+                          <option>سرند</option>
+                          <option>فیدر</option>
+                          <option>بالمیل</option>
+                          <option>ریموند</option>
+                          <option>راک اندراک</option>
+                          <option>آسیاب</option>
+                          <option>رادمیل</option>
+                          <option>نوار نقاله</option>
+                          <option>سنگ شکن موبایل</option>
+                          <option>کانکس</option>
+                          <option>تانکر</option>
+                          <option>دیزل ژنراتور</option>
+                        </select>
+                      </div>
+                     <div data-id="5">
+                      <select class="form-select js-example-basic-single d-none">
                         <option>بیل</option>
                         <option>لودر</option>
                         <option>دامتراک</option>
@@ -340,7 +348,9 @@
                         <option>پیکاپ</option>
                         <option>کمرشکن</option>
                       </select>
-                      <select data-id="6" class="form-select d-none">
+                     </div>
+                    <div data-id="6">
+                      <select class="form-select js-example-basic-single d-none">
                         <option>تریلی</option>
                         <option>کامیون</option>
                         <option>ریلی</option>
@@ -349,6 +359,7 @@
                         <option>پیکاپ</option>
                         <option>هوایی</option>
                       </select>
+                    </div>
                     </div>
                   </div>
                   <div class="col-lg-6">
@@ -725,8 +736,8 @@
   </section>
 
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <script src="../assets/js/jquery-3.7.1.min.js"></script>
+  <script src="../assets/js/select2.min.js"></script>
   <script src="../assets/js/scripts.js"></script>
   <script src="../assets/js/bootstrap.bundle.min.js"></script>
   <script src="../assets/js/jquery.uploader.min2.js"></script>

@@ -4,9 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+  <link rel='stylesheet' type='text/css' media='screen' href='../assets/css/select2.min.css'>
   <link rel='stylesheet' type='text/css' media='screen' href='../assets/css/styles.css'>
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.uploader.css">
+  <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  <link href="../assets/css/select2.min.css" rel="stylesheet" />
   <title>قرارداد جدید</title>
 </head>
 
@@ -27,52 +32,55 @@
           <!-- form -->
           <div>
             <div class="container py-3">
-              <form class="row g-4">
-                <div class="col-lg-6">
+              <form class="row g-2">
+                <div class="col-12">
                   <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">نام و نام خانوادگی کارفرما</label>
-                    <input type="text" class="form-control fs-14" value="صابر علی نژاد">
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">کد ملی کارفرما</label>
-                    <input type="text" class="form-control fs-14" value="2840172429">
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">شماره همراه</label>
-                    <input type="text" class="form-control fs-14" value="09149492490">
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">شماره ثابت</label>
-                    <input type="text" class="form-control fs-14" value="071-65329865">
-                  </div>
-                </div>
-                <div class="col-lg-8">
-                  <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">نشانی</label>
-                    <input type="text" class="form-control fs-14"
-                      value="رفسنجان،میدان امیرکبیر، بلوار عدالت، خیابان بنفشه،  کوچه 12، پلاک 18">
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">کدپستی</label>
-                    <input type="text" class="form-control fs-14" value="6532548921">
+                    <select class="form-select js-example-basic-single" multiple="multiple">
+                      <option>میثم مرادی</option>
+                      <option>علی رضایی</option>
+                      <option>احمد موسوی</option>
+                    </select>
                   </div>
                 </div>
                 <div class="col-12">
                   <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">پیمانکار / پیمانکاران</label>
+                    <label for="exampleInputEmail1" class="form-label">پیمانکار/پیمانکاران</label>
+                    <select class="form-select js-example-basic-single" multiple="multiple">
+                      <option>میثم مرادی</option>
+                      <option>علی رضایی</option>
+                      <option>احمد موسوی</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <p class="form-label">آدرس پروژه</p>
+                </div>
+                <div class="col-lg-6">
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">استان</label>
                     <select class="form-control">
                       <option>میثم مرادی</option>
                       <option>علی رضایی</option>
                       <option>احمد موسوی</option>
                     </select>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">شهر</label>
+                    <select class="form-control">
+                      <option>میثم مرادی</option>
+                      <option>علی رضایی</option>
+                      <option>احمد موسوی</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">محل پروژه</label>
+                    <input type="text" class="form-control fs-14"
+                      value="رفسنجان،میدان امیرکبیر، بلوار عدالت، خیابان بنفشه،  کوچه 12، پلاک 18">
                   </div>
                 </div>
                 <div class="col-lg-6"></div>
@@ -549,10 +557,11 @@
   </section>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-  <script src="../assets/js/scrollreveal.min.js"></script>
-  <script src="../assets/js/bootstrap.bundle.min.js"></script>/
+  <script src="../assets/js/jquery-3.7.1.min.js"></script>
+  <script src="../assets/js/select2.min.js"></script>
   <script src="../assets/js/scripts.js"></script>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/jquery.uploader.min2.js"></script>
 </body>
 
 </html>

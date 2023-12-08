@@ -216,7 +216,12 @@
           </div>
           <div>
             <!-- ck editor -->
-            <div id="editor">This is some sample content.</div>
+            <form>
+              <div id="editor">
+                <h1>Hello world!</h1>
+                <p>I'm an instance of <a href="https://ckeditor.com">CKEditor</a>.</p>
+              </div>
+            </form>
             <!--  -->
             <div class="me-auto mt-5" id="buttons">
               <div class="d-flex align-items-center justify-content-end gap-3">
@@ -258,22 +263,13 @@
     }
   </script>
   <script src="../assets/js/jquery-3.7.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-  <script src="../assets/js/config.js"></script>
   <script src="../assets/js/ckeditor.js"></script>
+  <script src="../assets/js/sample.js"></script>
   <script src="../assets/js/bootstrap.bundle.min.js"></script>/
   <script src="../assets/js/scripts.js"></script>
-  <script>
-    ClassicEditor
-      .create(document.querySelector('#editor'))
-      .then(editor => {
-        console.log(editor);
-      })
-      .catch(error => {
-        console.error(error);
-      });
-  </script>
-
+<script>
+	initSample();
+</script>
 </body>
 
 </html>
